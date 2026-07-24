@@ -1,0 +1,2 @@
+id,levelId,type,title,banglaTitle,instructions,fieldKeys,outputTemplate
+sample,class_6,letter,Application,আবেদন,Complete all fields,date|recipient|subject|body,{{date}}\n{{recipient}}\nSubject: {{subject}}\n{{body}}

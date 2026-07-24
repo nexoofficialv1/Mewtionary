@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "r_early_ball",
+      "levelId": "early",
+      "skill": "vocabulary",
+      "prompt": "Which one is a ball?",
+      "options": [
+        "Book",
+        "Ball",
+        "Cat"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ball means বল।"
+    },
+    {
+      "id": "r_c1_article",
+      "levelId": "class_1",
+      "skill": "grammar",
+      "prompt": "Choose: ___ apple",
+      "options": [
+        "a",
+        "an",
+        "the boy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use an before a vowel sound."
+    },
+    {
+      "id": "r_c2_plural",
+      "levelId": "class_2",
+      "skill": "grammar",
+      "prompt": "Plural of child is—",
+      "options": [
+        "childs",
+        "children",
+        "childes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Children is the irregular plural."
+    },
+    {
+      "id": "r_c3_daily",
+      "levelId": "class_3",
+      "skill": "grammar",
+      "prompt": "She ___ every day.",
+      "options": [
+        "read",
+        "reads",
+        "reading"
+      ],
+      "correctIndex": 1,
+      "explanation": "She takes the verb reads."
+    },
+    {
+      "id": "r_c4_now",
+      "levelId": "class_4",
+      "skill": "grammar",
+      "prompt": "They ___ now.",
+      "options": [
+        "play",
+        "played",
+        "are playing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Now indicates present continuous."
+    },
+    {
+      "id": "r_c4_kind",
+      "levelId": "class_4",
+      "skill": "vocabulary",
+      "prompt": "Kind means—",
+      "options": [
+        "দয়ালু",
+        "অসুস্থ",
+        "দুর্বল"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kind means দয়ালু."
+    },
+    {
+      "id": "r_c4_read",
+      "levelId": "class_4",
+      "skill": "reading",
+      "prompt": "A moral tells us—",
+      "options": [
+        "The lesson of a story",
+        "Only the title",
+        "The price"
+      ],
+      "correctIndex": 0,
+      "explanation": "A moral is the lesson conveyed by a story."
+    },
+    {
+      "id": "r_c5_past",
+      "levelId": "class_5",
+      "skill": "grammar",
+      "prompt": "Past form of go—",
+      "options": [
+        "goed",
+        "went",
+        "gone yesterday"
+      ],
+      "correctIndex": 1,
+      "explanation": "Went is the simple past of go."
+    },
+    {
+      "id": "r_c5_honest",
+      "levelId": "class_5",
+      "skill": "vocabulary",
+      "prompt": "Honest means—",
+      "options": [
+        "truthful",
+        "angry",
+        "careless"
+      ],
+      "correctIndex": 0,
+      "explanation": "An honest person tells the truth."
+    },
+    {
+      "id": "r_c6_future",
+      "levelId": "class_6",
+      "skill": "grammar",
+      "prompt": "I ___ visit tomorrow.",
+      "options": [
+        "will",
+        "did",
+        "was"
+      ],
+      "correctIndex": 0,
+      "explanation": "Will expresses a future action."
+    },
+    {
+      "id": "r_c6_letter",
+      "levelId": "class_6",
+      "skill": "writing",
+      "prompt": "A formal application should include—",
+      "options": [
+        "Subject",
+        "Only a story",
+        "No recipient"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clear subject is part of a formal application."
+    },
+    {
+      "id": "r_c7_passive",
+      "levelId": "class_7",
+      "skill": "grammar",
+      "prompt": "The work was completed. This is—",
+      "options": [
+        "Passive voice",
+        "Active voice",
+        "A command"
+      ],
+      "correctIndex": 0,
+      "explanation": "Was completed is a passive construction."
+    },
+    {
+      "id": "r_c7_report",
+      "levelId": "class_7",
+      "skill": "writing",
+      "prompt": "A report mainly presents—",
+      "options": [
+        "Facts",
+        "Only dreams",
+        "A private greeting"
+      ],
+      "correctIndex": 0,
+      "explanation": "A report presents organised facts."
+    },
+    {
+      "id": "r_c8_narration",
+      "levelId": "class_8",
+      "skill": "grammar",
+      "prompt": "He said, 'I am tired.' becomes—",
+      "options": [
+        "He said that he was tired.",
+        "He said I am tired.",
+        "He tired."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pronoun and tense change in indirect speech."
+    },
+    {
+      "id": "r_c8_notice",
+      "levelId": "class_8",
+      "skill": "writing",
+      "prompt": "A notice should be—",
+      "options": [
+        "Concise and factual",
+        "Very secret",
+        "Without date"
+      ],
+      "correctIndex": 0,
+      "explanation": "A notice must communicate essential facts concisely."
+    },
+    {
+      "id": "r_c9_transform",
+      "levelId": "class_9",
+      "skill": "grammar",
+      "prompt": "Choose the correct negative form preserving meaning.",
+      "options": [
+        "There is no one who does not love freedom.",
+        "No one love freedom.",
+        "Freedom not loves."
+      ],
+      "correctIndex": 0,
+      "explanation": "The first sentence is grammatically correct and preserves meaning."
+    },
+    {
+      "id": "r_c9_report",
+      "levelId": "class_9",
+      "skill": "writing",
+      "prompt": "An event report normally uses—",
+      "options": [
+        "Past tense",
+        "Only future tense",
+        "No verbs"
+      ],
+      "correctIndex": 0,
+      "explanation": "A completed event is generally reported in the past tense."
+    },
+    {
+      "id": "r_c9_comprehension",
+      "levelId": "class_9",
+      "skill": "reading",
+      "prompt": "An inference is—",
+      "options": [
+        "A conclusion based on clues",
+        "A copied heading",
+        "A punctuation mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "An inference is drawn from evidence or clues in the text."
+    }
+  ]
+}

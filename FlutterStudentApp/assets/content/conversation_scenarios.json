@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {
+      "id": "school_intro",
+      "levelId": "class_1",
+      "title": "Meeting a New Friend",
+      "banglaTitle": "নতুন বন্ধুর সঙ্গে পরিচয়",
+      "location": "School",
+      "intro": "Say hello and introduce yourself politely.",
+      "startNodeId": "hello",
+      "xp": 18,
+      "coins": 4,
+      "nodes": [
+        {
+          "id": "hello",
+          "speaker": "Rina",
+          "prompt": "Hello! What is your name?",
+          "banglaPrompt": "হ্যালো! তোমার নাম কী?",
+          "teacherHint": "Say: My name is …",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "name",
+              "text": "My name is Raju.",
+              "expectedKeywords": [
+                "my",
+                "name",
+                "is"
+              ],
+              "teacherReply": "Nice to meet you!",
+              "nextNodeId": "class",
+              "score": 10
+            }
+          ]
+        },
+        {
+          "id": "class",
+          "speaker": "Rina",
+          "prompt": "Which class do you read in?",
+          "banglaPrompt": "তুমি কোন শ্রেণিতে পড়ো?",
+          "teacherHint": "Say: I read in Class …",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "class_answer",
+              "text": "I read in Class One.",
+              "expectedKeywords": [
+                "i",
+                "read",
+                "class"
+              ],
+              "teacherReply": "That is wonderful.",
+              "nextNodeId": "bye",
+              "score": 10
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "speaker": "Rina",
+          "prompt": "It was nice talking to you.",
+          "banglaPrompt": "তোমার সঙ্গে কথা বলে ভালো লাগল।",
+          "teacherHint": "Say: Nice talking to you too.",
+          "isFinal": true,
+          "replies": [
+            {
+              "id": "bye_answer",
+              "text": "Nice talking to you too.",
+              "expectedKeywords": [
+                "nice",
+                "talking",
+                "too"
+              ],
+              "teacherReply": "Conversation complete.",
+              "nextNodeId": null,
+              "score": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_purchase",
+      "levelId": "class_4",
+      "title": "At a Bookshop",
+      "banglaTitle": "বইয়ের দোকানে",
+      "location": "Bookshop",
+      "intro": "Ask for a book, its price and complete a polite purchase.",
+      "startNodeId": "welcome",
+      "xp": 28,
+      "coins": 7,
+      "nodes": [
+        {
+          "id": "welcome",
+          "speaker": "Shopkeeper",
+          "prompt": "Good afternoon. How can I help you?",
+          "banglaPrompt": "শুভ অপরাহ্ণ। আপনাকে কীভাবে সাহায্য করতে পারি?",
+          "teacherHint": "Politely ask for an English storybook.",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "ask_book",
+              "text": "I would like an English storybook, please.",
+              "expectedKeywords": [
+                "would",
+                "like",
+                "storybook",
+                "please"
+              ],
+              "teacherReply": "Certainly. Here is a storybook.",
+              "nextNodeId": "price",
+              "score": 15
+            }
+          ]
+        },
+        {
+          "id": "price",
+          "speaker": "Shopkeeper",
+          "prompt": "This book is very popular.",
+          "banglaPrompt": "এই বইটি খুব জনপ্রিয়।",
+          "teacherHint": "Ask: How much does it cost?",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "ask_price",
+              "text": "How much does it cost?",
+              "expectedKeywords": [
+                "how",
+                "much",
+                "cost"
+              ],
+              "teacherReply": "It costs one hundred rupees.",
+              "nextNodeId": "purchase",
+              "score": 15
+            }
+          ]
+        },
+        {
+          "id": "purchase",
+          "speaker": "Shopkeeper",
+          "prompt": "Would you like to buy it?",
+          "banglaPrompt": "আপনি কি এটি কিনতে চান?",
+          "teacherHint": "Accept politely and thank the shopkeeper.",
+          "isFinal": true,
+          "replies": [
+            {
+              "id": "buy",
+              "text": "Yes, please. Thank you.",
+              "expectedKeywords": [
+                "yes",
+                "please",
+                "thank"
+              ],
+              "teacherReply": "Thank you. Have a nice day.",
+              "nextNodeId": null,
+              "score": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor_visit",
+      "levelId": "class_6",
+      "title": "Talking to a Doctor",
+      "banglaTitle": "ডাক্তারের সঙ্গে কথা",
+      "location": "Clinic",
+      "intro": "Describe a simple illness clearly and answer questions.",
+      "startNodeId": "problem",
+      "xp": 32,
+      "coins": 8,
+      "nodes": [
+        {
+          "id": "problem",
+          "speaker": "Doctor",
+          "prompt": "What seems to be the problem?",
+          "banglaPrompt": "কী সমস্যা হচ্ছে?",
+          "teacherHint": "Describe the problem in a complete sentence.",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "fever",
+              "text": "I have had a fever since yesterday.",
+              "expectedKeywords": [
+                "fever",
+                "since",
+                "yesterday"
+              ],
+              "teacherReply": "Do you have a cough?",
+              "nextNodeId": "cough",
+              "score": 15
+            }
+          ]
+        },
+        {
+          "id": "cough",
+          "speaker": "Doctor",
+          "prompt": "Do you have a cough or a sore throat?",
+          "banglaPrompt": "কাশি বা গলা ব্যথা আছে?",
+          "teacherHint": "Answer clearly with yes or no and details.",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "cough_yes",
+              "text": "Yes, I have a mild cough.",
+              "expectedKeywords": [
+                "yes",
+                "mild",
+                "cough"
+              ],
+              "teacherReply": "Please take rest and drink water.",
+              "nextNodeId": "thanks",
+              "score": 15
+            }
+          ]
+        },
+        {
+          "id": "thanks",
+          "speaker": "Doctor",
+          "prompt": "Take the medicine after meals.",
+          "banglaPrompt": "খাবারের পরে ওষুধটি খাবে।",
+          "teacherHint": "Thank the doctor politely.",
+          "isFinal": true,
+          "replies": [
+            {
+              "id": "thank_doctor",
+              "text": "Thank you, doctor.",
+              "expectedKeywords": [
+                "thank",
+                "doctor"
+              ],
+              "teacherReply": "You are welcome. Get well soon.",
+              "nextNodeId": null,
+              "score": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interview_school",
+      "levelId": "class_9",
+      "title": "School Interview Practice",
+      "banglaTitle": "বিদ্যালয় সাক্ষাৎকার অনুশীলন",
+      "location": "Interview room",
+      "intro": "Give clear, confident and organised answers.",
+      "startNodeId": "introduce",
+      "xp": 40,
+      "coins": 10,
+      "nodes": [
+        {
+          "id": "introduce",
+          "speaker": "Interviewer",
+          "prompt": "Please introduce yourself.",
+          "banglaPrompt": "নিজের পরিচয় দাও।",
+          "teacherHint": "Mention your name, class, interests and one strength.",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "intro_answer",
+              "text": "My name is Riya. I study in Class Nine. I enjoy reading and I am a responsible learner.",
+              "expectedKeywords": [
+                "name",
+                "class",
+                "enjoy",
+                "responsible"
+              ],
+              "teacherReply": "Thank you. Tell me about your goal.",
+              "nextNodeId": "goal",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "id": "goal",
+          "speaker": "Interviewer",
+          "prompt": "What is your academic goal this year?",
+          "banglaPrompt": "এই বছরে তোমার শিক্ষাগত লক্ষ্য কী?",
+          "teacherHint": "State a realistic goal and how you will achieve it.",
+          "isFinal": false,
+          "replies": [
+            {
+              "id": "goal_answer",
+              "text": "My goal is to improve my English writing by practising every day.",
+              "expectedKeywords": [
+                "goal",
+                "improve",
+                "writing",
+                "practising"
+              ],
+              "teacherReply": "That is a practical goal.",
+              "nextNodeId": "challenge",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "id": "challenge",
+          "speaker": "Interviewer",
+          "prompt": "How do you respond to a difficult task?",
+          "banglaPrompt": "কঠিন কাজের মোকাবিলা কীভাবে করো?",
+          "teacherHint": "Explain your steps calmly.",
+          "isFinal": true,
+          "replies": [
+            {
+              "id": "challenge_answer",
+              "text": "I divide the task into smaller steps, ask for help when necessary and keep trying.",
+              "expectedKeywords": [
+                "steps",
+                "help",
+                "trying"
+              ],
+              "teacherReply": "Excellent answer. The interview is complete.",
+              "nextNodeId": null,
+              "score": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

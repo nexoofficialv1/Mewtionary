@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_1",
+  "units": [
+    {
+      "id": "class_1_unit_1",
+      "levelId": "class_1",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c1_family",
+          "title": "Family Words",
+          "banglaTitle": "পরিবারের শব্দ",
+          "skill": "vocabulary",
+          "estimatedMinutes": 7,
+          "teacherState": "speaking",
+          "content": {
+            "explanation": "Father, mother, brother and sister are family words."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Mother means—",
+              "options": [
+                "মা",
+                "বাবা",
+                "ভাই"
+              ],
+              "correctIndex": 0,
+              "hint": "Mother মানে মা।"
+            }
+          ],
+          "prerequisites": [],
+          "stars": 2
+        },
+        {
+          "id": "c1_this_is",
+          "title": "This is…",
+          "banglaTitle": "This is বাক্য",
+          "skill": "grammar",
+          "estimatedMinutes": 7,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "কাছের একটি জিনিস দেখাতে This is ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Choose correctly:",
+              "options": [
+                "This is a book.",
+                "These is a book.",
+                "This are book."
+              ],
+              "correctIndex": 0,
+              "hint": "One nearby thing: This is."
+            }
+          ],
+          "prerequisites": [
+            "c1_family"
+          ],
+          "stars": 2
+        }
+      ]
+    }
+  ]
+}

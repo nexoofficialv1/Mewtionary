@@ -1,0 +1,9 @@
+{
+  "id": "sample_certificate",
+  "title": "Sample Certificate",
+  "banglaTitle": "নমুনা সনদ",
+  "description": "Complete a learning milestone.",
+  "icon": "🏆",
+  "ruleType": "xp",
+  "threshold": 100
+}

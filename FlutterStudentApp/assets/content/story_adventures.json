@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "stories": [
+    {
+      "id": "adventure_kind_lion",
+      "levelId": "class_4",
+      "title": "The Kind Lion",
+      "banglaTitle": "দয়ালু সিংহ",
+      "summary": "A lion learns that kindness creates friendship.",
+      "pages": [
+        {
+          "english": "A young lion lived near a green forest.",
+          "bangla": "একটি তরুণ সিংহ সবুজ বনের কাছে থাকত।",
+          "teacherState": "reading"
+        },
+        {
+          "english": "One day, he found a little bird with an injured wing.",
+          "bangla": "একদিন সে আহত ডানার একটি ছোট পাখিকে দেখতে পেল।",
+          "teacherState": "surprised"
+        },
+        {
+          "english": "The lion protected the bird and brought food.",
+          "bangla": "সিংহটি পাখিটিকে রক্ষা করল এবং খাবার এনে দিল।",
+          "teacherState": "praise"
+        },
+        {
+          "english": "Soon the bird became well, and they became friends.",
+          "bangla": "শীঘ্রই পাখিটি সুস্থ হলো এবং তারা বন্ধু হয়ে গেল।",
+          "teacherState": "happy"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "forest",
+          "bangla": "বন"
+        },
+        {
+          "word": "injured",
+          "bangla": "আহত"
+        },
+        {
+          "word": "protected",
+          "bangla": "রক্ষা করেছিল"
+        },
+        {
+          "word": "friend",
+          "bangla": "বন্ধু"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Who was injured?",
+          "options": [
+            "The lion",
+            "The bird",
+            "A deer"
+          ],
+          "correctIndex": 1,
+          "hint": "The bird had an injured wing."
+        },
+        {
+          "question": "What did the lion do?",
+          "options": [
+            "He ignored the bird.",
+            "He frightened the bird.",
+            "He protected the bird."
+          ],
+          "correctIndex": 2,
+          "hint": "The lion showed kindness."
+        }
+      ],
+      "moral": "Kindness creates friendship.",
+      "xp": 30,
+      "coins": 8
+    },
+    {
+      "id": "adventure_honest_woodcutter",
+      "levelId": "class_5",
+      "title": "The Honest Woodcutter",
+      "banglaTitle": "সৎ কাঠুরে",
+      "summary": "Honesty brings a reward.",
+      "pages": [
+        {
+          "english": "A woodcutter dropped his axe into a river.",
+          "bangla": "এক কাঠুরে তার কুড়াল নদীতে ফেলে দিল।",
+          "teacherState": "surprised"
+        },
+        {
+          "english": "A river spirit showed him a golden axe.",
+          "bangla": "এক নদীর আত্মা তাকে একটি সোনার কুড়াল দেখাল।",
+          "teacherState": "reading"
+        },
+        {
+          "english": "The woodcutter said that the golden axe was not his.",
+          "bangla": "কাঠুরে বলল সোনার কুড়ালটি তার নয়।",
+          "teacherState": "pointing"
+        },
+        {
+          "english": "The spirit rewarded him for telling the truth.",
+          "bangla": "সত্য বলার জন্য আত্মাটি তাকে পুরস্কৃত করল।",
+          "teacherState": "praise"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "axe",
+          "bangla": "কুড়াল"
+        },
+        {
+          "word": "golden",
+          "bangla": "সোনার"
+        },
+        {
+          "word": "truth",
+          "bangla": "সত্য"
+        },
+        {
+          "word": "rewarded",
+          "bangla": "পুরস্কৃত করেছিল"
+        }
+      ],
+      "questions": [
+        {
+          "question": "What fell into the river?",
+          "options": [
+            "A book",
+            "An axe",
+            "A bag"
+          ],
+          "correctIndex": 1,
+          "hint": "The woodcutter used an axe."
+        },
+        {
+          "question": "Why was he rewarded?",
+          "options": [
+            "He was strong.",
+            "He told the truth.",
+            "He found gold."
+          ],
+          "correctIndex": 1,
+          "hint": "He was honest."
+        }
+      ],
+      "moral": "Honesty is always rewarded.",
+      "xp": 32,
+      "coins": 9
+    },
+    {
+      "id": "adventure_future_city",
+      "levelId": "class_7",
+      "title": "A Visit to the Future City",
+      "banglaTitle": "ভবিষ্যতের শহরে ভ্রমণ",
+      "summary": "Two students discover how technology and responsibility work together.",
+      "pages": [
+        {
+          "english": "Mira and Arif entered a city powered by clean energy.",
+          "bangla": "মীরা ও আরিফ পরিচ্ছন্ন শক্তিতে চালিত একটি শহরে প্রবেশ করল।",
+          "teacherState": "reading"
+        },
+        {
+          "english": "Robots helped people, but citizens still made important decisions.",
+          "bangla": "রোবট মানুষকে সাহায্য করত, তবে গুরুত্বপূর্ণ সিদ্ধান্ত নাগরিকরাই নিত।",
+          "teacherState": "pointing"
+        },
+        {
+          "english": "The students learned that technology needs wise and responsible users.",
+          "bangla": "শিক্ষার্থীরা শিখল প্রযুক্তির জন্য জ্ঞানী ও দায়িত্বশীল ব্যবহারকারী প্রয়োজন।",
+          "teacherState": "writingBoard"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "powered",
+          "bangla": "চালিত"
+        },
+        {
+          "word": "citizens",
+          "bangla": "নাগরিক"
+        },
+        {
+          "word": "responsible",
+          "bangla": "দায়িত্বশীল"
+        },
+        {
+          "word": "decisions",
+          "bangla": "সিদ্ধান্ত"
+        }
+      ],
+      "questions": [
+        {
+          "question": "What powered the city?",
+          "options": [
+            "Coal only",
+            "Clean energy",
+            "No energy"
+          ],
+          "correctIndex": 1,
+          "hint": "The city used clean energy."
+        },
+        {
+          "question": "Who made important decisions?",
+          "options": [
+            "Citizens",
+            "Only robots",
+            "Nobody"
+          ],
+          "correctIndex": 0,
+          "hint": "Robots helped, but citizens decided."
+        }
+      ],
+      "moral": "Technology works best with human responsibility.",
+      "xp": 38,
+      "coins": 10
+    }
+  ]
+}

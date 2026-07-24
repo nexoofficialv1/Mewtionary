@@ -1,0 +1,35 @@
+[
+  {
+    "id": "honest_woodcutter",
+    "title": "The Honest Woodcutter",
+    "banglaTitle": "সৎ কাঠুরে",
+    "pages": [
+      {
+        "english": "Once there was a poor but honest woodcutter.",
+        "bangla": "এক দেশে এক দরিদ্র কিন্তু সৎ কাঠুরে ছিল।",
+        "teacherState": "reading"
+      },
+      {
+        "english": "One day his axe fell into a deep river.",
+        "bangla": "একদিন তার কুঠারটি গভীর নদীতে পড়ে গেল।",
+        "teacherState": "surprised"
+      },
+      {
+        "english": "A fairy showed him a golden axe, but he said it was not his.",
+        "bangla": "একটি পরী তাকে সোনার কুঠার দেখাল, কিন্তু সে বলল সেটি তার নয়।",
+        "teacherState": "thinking"
+      },
+      {
+        "english": "The fairy rewarded him for telling the truth.",
+        "bangla": "সত্য বলার জন্য পরী তাকে পুরস্কৃত করল।",
+        "teacherState": "praise"
+      }
+    ],
+    "moral": "Honesty is the best policy — সততাই সর্বোত্তম নীতি।",
+    "questions": [
+      "Why was the woodcutter sad?",
+      "Did he accept the golden axe?",
+      "What do we learn from the story?"
+    ]
+  }
+]

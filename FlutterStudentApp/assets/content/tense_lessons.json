@@ -1,0 +1,58 @@
+[
+  {
+    "id": "present_simple",
+    "title": "Present Simple Tense",
+    "banglaTitle": "সাধারণ বর্তমান কাল",
+    "rule": "নিয়মিত কাজ, অভ্যাস অথবা সাধারণ সত্য বোঝাতে Present Simple ব্যবহার হয়। He, She অথবা It-এর সঙ্গে মূল verb-এর শেষে s বা es বসে।",
+    "examples": [
+      "I play football.",
+      "She plays football.",
+      "The sun rises in the east."
+    ],
+    "quiz": [
+      {
+        "question": "Choose the correct sentence:",
+        "options": [
+          "He go to school.",
+          "He goes to school.",
+          "He going to school."
+        ],
+        "correctIndex": 1,
+        "hint": "He-এর সঙ্গে go নয়, goes হবে।"
+      },
+      {
+        "question": "The sun ___ in the east.",
+        "options": [
+          "rise",
+          "rises",
+          "rising"
+        ],
+        "correctIndex": 1,
+        "hint": "The sun হলো singular subject, তাই rises হবে।"
+      }
+    ]
+  },
+  {
+    "id": "present_continuous",
+    "title": "Present Continuous Tense",
+    "banglaTitle": "ঘটমান বর্তমান কাল",
+    "rule": "এই মুহূর্তে চলমান কাজ বোঝাতে am/is/are + verb-ing ব্যবহার হয়।",
+    "examples": [
+      "I am reading.",
+      "She is singing.",
+      "They are playing."
+    ],
+    "quiz": [
+      {
+        "question": "She ___ a story now.",
+        "options": [
+          "reads",
+          "is reading",
+          "read"
+        ],
+        "correctIndex": 1,
+        "hint": "Now থাকায় is reading হবে।"
+      }
+    ]
+  }
+]

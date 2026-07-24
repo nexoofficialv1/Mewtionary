@@ -1,0 +1,31 @@
+name: mewtionary_student
+description: Mewtionary interactive English–Bangla learning app with Unity 3D teacher integration.
+publish_to: "none"
+version: 2.7.0+27
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mewtionary_teacher3d_bridge:
+    path: ../FlutterBridge
+  flutter_tts: ^4.2.0
+  speech_to_text: ^7.0.0
+  shared_preferences: ^2.3.3
+  sqflite: ^2.4.1
+  path: ^1.9.1
+  file_picker: ^8.1.7
+  crypto: ^3.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/content/
+    - assets/packs/

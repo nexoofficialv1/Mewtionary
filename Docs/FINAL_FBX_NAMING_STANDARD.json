@@ -1,0 +1,62 @@
+{
+  "version": "2.1",
+  "required_bones": [
+    "root",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "upper_arm.L",
+    "forearm.L",
+    "hand.L",
+    "upper_arm.R",
+    "forearm.R",
+    "hand.R",
+    "thigh.L",
+    "shin.L",
+    "foot.L",
+    "thigh.R",
+    "shin.R",
+    "foot.R"
+  ],
+  "recommended_face_nodes": [
+    "Face",
+    "Eye_L",
+    "Eye_R",
+    "Pupil_L",
+    "Pupil_R",
+    "Glasses",
+    "Brow_L",
+    "Brow_R"
+  ],
+  "required_blendshapes": [
+    "viseme_REST",
+    "viseme_A",
+    "viseme_E",
+    "viseme_O",
+    "viseme_MBP",
+    "viseme_FV",
+    "viseme_LRTDN",
+    "expr_SMILE",
+    "expr_LAUGH",
+    "expr_SURPRISE",
+    "expr_GENTLE",
+    "expr_SLEEPY",
+    "blink_L",
+    "blink_R"
+  ],
+  "prop_anchors": [
+    "BookAnchor_L",
+    "PointerAnchor_R",
+    "ChalkAnchor_R"
+  ],
+  "export": {
+    "format": "FBX 2018+ or GLB 2.0",
+    "scale": "1 Unity unit = 1 metre",
+    "forward": "-Z",
+    "up": "+Y",
+    "apply_transforms": true,
+    "triangulate": true,
+    "leaf_bones": false
+  }
+}

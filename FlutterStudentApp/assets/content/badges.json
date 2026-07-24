@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "badges": [
+    {
+      "id": "first_steps",
+      "title": "First Steps",
+      "banglaTitle": "প্রথম পদক্ষেপ",
+      "description": "Earn 10 XP.",
+      "icon": "🌱",
+      "ruleType": "xp",
+      "threshold": 10
+    },
+    {
+      "id": "word_gamer",
+      "title": "Word Gamer",
+      "banglaTitle": "শব্দ খেলোয়াড়",
+      "description": "Complete 3 games correctly.",
+      "icon": "🎮",
+      "ruleType": "games",
+      "threshold": 3
+    },
+    {
+      "id": "careful_listener",
+      "title": "Careful Listener",
+      "banglaTitle": "মনোযোগী শ্রোতা",
+      "description": "Complete 3 listening exercises correctly.",
+      "icon": "🎧",
+      "ruleType": "listening",
+      "threshold": 3
+    },
+    {
+      "id": "story_explorer",
+      "title": "Story Explorer",
+      "banglaTitle": "গল্প অভিযাত্রী",
+      "description": "Complete 2 story adventures.",
+      "icon": "📚",
+      "ruleType": "stories",
+      "threshold": 2
+    },
+    {
+      "id": "three_day_streak",
+      "title": "Three Day Streak",
+      "banglaTitle": "তিন দিনের ধারাবাহিকতা",
+      "description": "Learn on 3 consecutive days.",
+      "icon": "🔥",
+      "ruleType": "streak",
+      "threshold": 3
+    },
+    {
+      "id": "coin_collector",
+      "title": "Coin Collector",
+      "banglaTitle": "কয়েন সংগ্রাহক",
+      "description": "Collect 25 coins.",
+      "icon": "🪙",
+      "ruleType": "coins",
+      "threshold": 25
+    },
+    {
+      "id": "level_five",
+      "title": "Rising Scholar",
+      "banglaTitle": "উদীয়মান শিক্ষার্থী",
+      "description": "Earn 400 XP.",
+      "icon": "🏆",
+      "ruleType": "xp",
+      "threshold": 400
+    },
+    {
+      "id": "confident_speaker",
+      "title": "Confident Speaker",
+      "banglaTitle": "আত্মবিশ্বাসী বক্তা",
+      "description": "Complete 2 conversation scenarios.",
+      "icon": "🗣️",
+      "ruleType": "conversation",
+      "threshold": 2
+    },
+    {
+      "id": "revision_hero",
+      "title": "Revision Hero",
+      "banglaTitle": "রিভিশন হিরো",
+      "description": "Complete 3 smart revision quizzes.",
+      "icon": "🧠",
+      "ruleType": "revision",
+      "threshold": 3
+    },
+    {
+      "id": "clear_speaker",
+      "title": "Clear Speaker",
+      "banglaTitle": "স্পষ্ট বক্তা",
+      "description": "Complete 3 pronunciation exercises successfully.",
+      "icon": "🎙️",
+      "ruleType": "pronunciation",
+      "threshold": 3
+    },
+    {
+      "id": "exam_ready",
+      "title": "Exam Ready",
+      "banglaTitle": "পরীক্ষার জন্য প্রস্তুত",
+      "description": "Pass 2 mock exam papers.",
+      "icon": "📝",
+      "ruleType": "exam",
+      "threshold": 2
+    },
+    {
+      "id": "study_planner",
+      "title": "Study Planner",
+      "banglaTitle": "পরিকল্পিত শিক্ষার্থী",
+      "description": "Complete 5 weekly study tasks.",
+      "icon": "📅",
+      "ruleType": "studyTasks",
+      "threshold": 5
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_7",
+  "units": [
+    {
+      "id": "class_7_unit_1",
+      "levelId": "class_7",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c7_voice",
+          "title": "Active and Passive Voice",
+          "banglaTitle": "কর্তৃবাচ্য ও কর্মবাচ্য",
+          "skill": "grammar",
+          "estimatedMinutes": 15,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "Active voice-এ subject কাজ করে; passive voice-এ object গুরুত্ব পায়।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "'The letter was written by Rina' is—",
+              "options": [
+                "Active",
+                "Passive",
+                "Question"
+              ],
+              "correctIndex": 1,
+              "hint": "Was written by indicates passive."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 4
+        },
+        {
+          "id": "c7_report",
+          "title": "Report Writing",
+          "banglaTitle": "প্রতিবেদন লেখা",
+          "skill": "writing",
+          "estimatedMinutes": 18,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "A report needs title, date/place, facts and conclusion."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "A report mainly contains—",
+              "options": [
+                "Facts",
+                "Only magic",
+                "No title"
+              ],
+              "correctIndex": 0,
+              "hint": "Reports are factual."
+            }
+          ],
+          "prerequisites": [
+            "c7_voice"
+          ],
+          "stars": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "early",
+  "units": [
+    {
+      "id": "early_unit_1",
+      "levelId": "early",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "early_abc",
+          "title": "A, B and C",
+          "banglaTitle": "A, B ও C",
+          "skill": "listening",
+          "estimatedMinutes": 5,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "A says apple, B says ball, and C says cat."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Which word begins with B?",
+              "options": [
+                "Apple",
+                "Ball",
+                "Cat"
+              ],
+              "correctIndex": 1,
+              "hint": "B says Ball."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 2
+        },
+        {
+          "id": "early_colours",
+          "title": "Red and Blue",
+          "banglaTitle": "লাল ও নীল",
+          "skill": "vocabulary",
+          "estimatedMinutes": 5,
+          "teacherState": "speaking",
+          "content": {
+            "explanation": "Red মানে লাল। Blue মানে নীল।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Which one means লাল?",
+              "options": [
+                "Blue",
+                "Red",
+                "Green"
+              ],
+              "correctIndex": 1,
+              "hint": "Red মানে লাল।"
+            }
+          ],
+          "prerequisites": [
+            "early_abc"
+          ],
+          "stars": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "2.7.0-pronunciation-exam-planner-certificates",
+  "checks": {
+    "version_2_7": true,
+    "database_v5": true,
+    "pronunciation_table": true,
+    "exam_table": true,
+    "study_task_table": true,
+    "certificate_table": true,
+    "all_routes": true,
+    "app_routes": true,
+    "home_cards": true,
+    "daily_integration": true,
+    "parent_report_extended": true,
+    "pronunciation_count": true,
+    "exam_count": true,
+    "certificate_count": true,
+    "badge_count": true,
+    "demo_created": true
+  },
+  "pronunciation_exercises": 12,
+  "mock_exam_papers": 5,
+  "mock_exam_questions": 19,
+  "certificates": 5,
+  "badges": 12,
+  "flutter_dart_files": 70,
+  "new_tests": [
+    "mock_exam_service_test.dart",
+    "exam_coach_models_test.dart"
+  ],
+  "limitations": [
+    "Pronunciation scoring uses recognised transcript, not a phoneme acoustic model.",
+    "Short-answer marking is rule and accepted-key based.",
+    "Study planner has no Android notification scheduling yet.",
+    "Certificates are Mewtionary achievements, not official academic certificates.",
+    "Bundled lessons and exams are sample content.",
+    "Flutter SDK, Unity Editor and physical Android testing were unavailable."
+  ]
+}

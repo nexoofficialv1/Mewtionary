@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "prompts": [
+    {
+      "id": "early_A",
+      "levelId": "early",
+      "title": "Trace A",
+      "guideText": "A",
+      "instruction": "বড় করে A অক্ষরটি trace করো।"
+    },
+    {
+      "id": "c1_cat",
+      "levelId": "class_1",
+      "title": "Write cat",
+      "guideText": "cat",
+      "instruction": "cat শব্দটি দেখে লিখো।"
+    },
+    {
+      "id": "c2_school",
+      "levelId": "class_2",
+      "title": "Write school",
+      "guideText": "school",
+      "instruction": "school শব্দটি পরিষ্কার করে লিখো।"
+    },
+    {
+      "id": "c3_sentence",
+      "levelId": "class_3",
+      "title": "Simple Sentence",
+      "guideText": "I read a book.",
+      "instruction": "বাক্যটি দেখে লিখো।"
+    },
+    {
+      "id": "c4_continuous",
+      "levelId": "class_4",
+      "title": "Present Continuous",
+      "guideText": "She is reading.",
+      "instruction": "Capital letter ও full stop ঠিক রেখে লেখো।"
+    },
+    {
+      "id": "c5_past",
+      "levelId": "class_5",
+      "title": "Past Tense",
+      "guideText": "I visited the park.",
+      "instruction": "Past tense বাক্যটি লিখো।"
+    },
+    {
+      "id": "c6_dialogue",
+      "levelId": "class_6",
+      "title": "Dialogue Line",
+      "guideText": "Rina: How are you?",
+      "instruction": "Speaker name ও punctuation ঠিক রেখে লেখো।"
+    },
+    {
+      "id": "c7_report",
+      "levelId": "class_7",
+      "title": "Report Heading",
+      "guideText": "A Tree Plantation Programme",
+      "instruction": "Report heading পরিষ্কার করে লিখো।"
+    },
+    {
+      "id": "c8_notice",
+      "levelId": "class_8",
+      "title": "Notice Heading",
+      "guideText": "NOTICE",
+      "instruction": "Capital letters-এ NOTICE লেখো।"
+    },
+    {
+      "id": "c9_letter",
+      "levelId": "class_9",
+      "title": "Formal Subject",
+      "guideText": "Subject: Prayer for leave",
+      "instruction": "Formal letter-এর subject line লিখো।"
+    }
+  ]
+}

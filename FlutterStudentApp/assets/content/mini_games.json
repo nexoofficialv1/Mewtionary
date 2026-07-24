@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "challenges": [
+    {
+      "id": "early_match_apple",
+      "levelId": "early",
+      "type": "wordMatch",
+      "prompt": "Apple মানে কোনটি?",
+      "answer": "আপেল",
+      "options": [
+        "আপেল",
+        "বল",
+        "বই"
+      ],
+      "hint": "A says apple.",
+      "xp": 8,
+      "coins": 2
+    },
+    {
+      "id": "c1_spell_cat",
+      "levelId": "class_1",
+      "type": "spelling",
+      "prompt": "Letters সাজিয়ে cat বানাও",
+      "answer": "cat",
+      "options": [
+        "t",
+        "a",
+        "c"
+      ],
+      "hint": "The first letter is c.",
+      "xp": 10,
+      "coins": 2
+    },
+    {
+      "id": "c2_sentence_this",
+      "levelId": "class_2",
+      "type": "sentenceBuilder",
+      "prompt": "সঠিক বাক্য সাজাও",
+      "answer": "This is my book",
+      "options": [
+        "book",
+        "This",
+        "my",
+        "is"
+      ],
+      "hint": "The sentence begins with This.",
+      "xp": 12,
+      "coins": 3
+    },
+    {
+      "id": "c3_match_brave",
+      "levelId": "class_3",
+      "type": "wordMatch",
+      "prompt": "Brave মানে—",
+      "answer": "সাহসী",
+      "options": [
+        "অলস",
+        "সাহসী",
+        "নীরব"
+      ],
+      "hint": "A brave person is not afraid.",
+      "xp": 12,
+      "coins": 3
+    },
+    {
+      "id": "c4_sentence_reading",
+      "levelId": "class_4",
+      "type": "sentenceBuilder",
+      "prompt": "Present continuous sentence সাজাও",
+      "answer": "She is reading",
+      "options": [
+        "reading",
+        "She",
+        "is"
+      ],
+      "hint": "Subject comes first.",
+      "xp": 15,
+      "coins": 4
+    },
+    {
+      "id": "c5_spell_journey",
+      "levelId": "class_5",
+      "type": "spelling",
+      "prompt": "Journey শব্দের বানান তৈরি করো",
+      "answer": "journey",
+      "options": [
+        "n",
+        "j",
+        "y",
+        "o",
+        "r",
+        "u",
+        "e"
+      ],
+      "hint": "It begins with j.",
+      "xp": 15,
+      "coins": 4
+    },
+    {
+      "id": "c6_sentence_future",
+      "levelId": "class_6",
+      "type": "sentenceBuilder",
+      "prompt": "Future tense sentence সাজাও",
+      "answer": "I will visit tomorrow",
+      "options": [
+        "tomorrow",
+        "visit",
+        "I",
+        "will"
+      ],
+      "hint": "Use will after I.",
+      "xp": 18,
+      "coins": 5
+    },
+    {
+      "id": "c7_match_respect",
+      "levelId": "class_7",
+      "type": "wordMatch",
+      "prompt": "Respect মানে—",
+      "answer": "সম্মান",
+      "options": [
+        "সম্মান",
+        "অনুরোধ",
+        "বিরোধ"
+      ],
+      "hint": "We respect our teachers.",
+      "xp": 18,
+      "coins": 5
+    },
+    {
+      "id": "c8_sentence_narration",
+      "levelId": "class_8",
+      "type": "sentenceBuilder",
+      "prompt": "Indirect speech সাজাও",
+      "answer": "He said that he was tired",
+      "options": [
+        "tired",
+        "He",
+        "was",
+        "that",
+        "said",
+        "he"
+      ],
+      "hint": "Begin with He said that.",
+      "xp": 20,
+      "coins": 6
+    },
+    {
+      "id": "c9_spell_transformation",
+      "levelId": "class_9",
+      "type": "spelling",
+      "prompt": "Transformation শব্দের বানান তৈরি করো",
+      "answer": "transformation",
+      "options": [
+        "t",
+        "r",
+        "a",
+        "n",
+        "s",
+        "f",
+        "o",
+        "r",
+        "m",
+        "a",
+        "t",
+        "i",
+        "o",
+        "n"
+      ],
+      "hint": "It begins with trans.",
+      "xp": 22,
+      "coins": 7
+    }
+  ]
+}

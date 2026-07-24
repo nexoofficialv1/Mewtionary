@@ -1,0 +1,23 @@
+{
+  "id": "sample_exam",
+  "levelId": "class_4",
+  "title": "Sample Exam",
+  "banglaTitle": "নমুনা পরীক্ষা",
+  "durationMinutes": 15,
+  "instructions": ["Answer all questions."],
+  "xp": 30,
+  "coins": 8,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "skill": "grammar",
+      "prompt": "They ___ now.",
+      "options": ["play", "played", "are playing"],
+      "answer": "are playing",
+      "acceptedAnswers": ["are playing"],
+      "explanation": "Now indicates present continuous.",
+      "marks": 1
+    }
+  ]
+}

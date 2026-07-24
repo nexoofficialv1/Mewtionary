@@ -1,0 +1,40 @@
+{
+  "version": "2.5.0-games-listening-stories-rewards",
+  "checks": {
+    "database_schema_v3": true,
+    "reward_wallet_table": true,
+    "reward_event_unique_key": true,
+    "games_route": true,
+    "listening_route": true,
+    "story_route": true,
+    "rewards_route": true,
+    "routes_declared": true,
+    "home_games": true,
+    "home_listening": true,
+    "home_story": true,
+    "home_rewards": true,
+    "daily_games": true,
+    "daily_listening": true,
+    "game_count": true,
+    "listening_count": true,
+    "story_count": true,
+    "badge_count": true,
+    "demo_created": true
+  },
+  "mini_game_challenges": 10,
+  "listening_exercises": 10,
+  "story_adventures": 3,
+  "badges": 7,
+  "flutter_dart_files": 50,
+  "new_test_files": [
+    "mini_game_service_test.dart",
+    "engagement_models_test.dart",
+    "story_adventure_model_test.dart"
+  ],
+  "limitations": [
+    "Bundled games, listening exercises and stories are sample content.",
+    "Dictation uses recognized text rather than raw-audio phoneme analysis.",
+    "Coins are offline achievement points with no monetary value.",
+    "Flutter SDK, Unity Editor and physical Android testing were unavailable."
+  ]
+}

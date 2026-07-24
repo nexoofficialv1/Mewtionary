@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "exercises": [
+    {
+      "id": "early_listen_ball",
+      "levelId": "early",
+      "title": "Listen and Choose",
+      "english": "This is a ball.",
+      "bangla": "এটি একটি বল।",
+      "mode": "mcq",
+      "options": [
+        "Ball",
+        "Book",
+        "Cat"
+      ],
+      "correctIndex": 0,
+      "xp": 8,
+      "coins": 2
+    },
+    {
+      "id": "c1_listen_book",
+      "levelId": "class_1",
+      "title": "Listen and Choose",
+      "english": "I have a book.",
+      "bangla": "আমার একটি বই আছে।",
+      "mode": "mcq",
+      "options": [
+        "A pen",
+        "A book",
+        "A ball"
+      ],
+      "correctIndex": 1,
+      "xp": 10,
+      "coins": 2
+    },
+    {
+      "id": "c2_dictation_school",
+      "levelId": "class_2",
+      "title": "Short Dictation",
+      "english": "We go to school.",
+      "bangla": "আমরা বিদ্যালয়ে যাই।",
+      "mode": "dictation",
+      "options": [],
+      "correctIndex": 0,
+      "xp": 12,
+      "coins": 3
+    },
+    {
+      "id": "c3_dictation_daily",
+      "levelId": "class_3",
+      "title": "Daily Action Dictation",
+      "english": "She reads every day.",
+      "bangla": "সে প্রতিদিন পড়ে।",
+      "mode": "dictation",
+      "options": [],
+      "correctIndex": 0,
+      "xp": 14,
+      "coins": 4
+    },
+    {
+      "id": "c4_listen_continuous",
+      "levelId": "class_4",
+      "title": "Tense Listening",
+      "english": "The children are playing now.",
+      "bangla": "শিশুরা এখন খেলছে।",
+      "mode": "mcq",
+      "options": [
+        "The children played yesterday.",
+        "The children are playing now.",
+        "The child plays every day."
+      ],
+      "correctIndex": 1,
+      "xp": 15,
+      "coins": 4
+    },
+    {
+      "id": "c5_dictation_past",
+      "levelId": "class_5",
+      "title": "Past Tense Dictation",
+      "english": "Yesterday we visited the museum.",
+      "bangla": "গতকাল আমরা জাদুঘর পরিদর্শন করেছি।",
+      "mode": "dictation",
+      "options": [],
+      "correctIndex": 0,
+      "xp": 16,
+      "coins": 5
+    },
+    {
+      "id": "c6_listen_future",
+      "levelId": "class_6",
+      "title": "Future Meaning",
+      "english": "I will finish the work tomorrow.",
+      "bangla": "আমি আগামীকাল কাজটি শেষ করব।",
+      "mode": "mcq",
+      "options": [
+        "The work is already finished.",
+        "The work will be finished tomorrow.",
+        "The work was finished yesterday."
+      ],
+      "correctIndex": 1,
+      "xp": 18,
+      "coins": 5
+    },
+    {
+      "id": "c7_dictation_report",
+      "levelId": "class_7",
+      "title": "Report Sentence Dictation",
+      "english": "The programme was attended by many students.",
+      "bangla": "অনুষ্ঠানে অনেক শিক্ষার্থী উপস্থিত ছিল।",
+      "mode": "dictation",
+      "options": [],
+      "correctIndex": 0,
+      "xp": 20,
+      "coins": 6
+    },
+    {
+      "id": "c8_listen_notice",
+      "levelId": "class_8",
+      "title": "Notice Listening",
+      "english": "The meeting will be held on Monday.",
+      "bangla": "সভাটি সোমবার অনুষ্ঠিত হবে।",
+      "mode": "mcq",
+      "options": [
+        "The meeting is cancelled.",
+        "The meeting was held yesterday.",
+        "The meeting will be held on Monday."
+      ],
+      "correctIndex": 2,
+      "xp": 20,
+      "coins": 6
+    },
+    {
+      "id": "c9_dictation_formal",
+      "levelId": "class_9",
+      "title": "Formal English Dictation",
+      "english": "I request you to grant me leave for two days.",
+      "bangla": "আমি দুই দিনের ছুটি মঞ্জুর করার অনুরোধ করছি।",
+      "mode": "dictation",
+      "options": [],
+      "correctIndex": 0,
+      "xp": 24,
+      "coins": 7
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "2.6.0-conversation-homework-revision-reports",
+  "checks": {
+    "version_2_6": true,
+    "database_v4": true,
+    "conversation_table": true,
+    "homework_table": true,
+    "revision_table": true,
+    "conversation_route": true,
+    "homework_route": true,
+    "revision_route": true,
+    "report_route": true,
+    "all_routes_declared": true,
+    "home_cards": true,
+    "daily_conversation_revision": true,
+    "scenario_count": true,
+    "homework_template_count": true,
+    "revision_question_count": true,
+    "badge_count": true,
+    "demo_created": true
+  },
+  "conversation_scenarios": 4,
+  "homework_templates": 5,
+  "revision_questions": 18,
+  "badges": 9,
+  "flutter_dart_files": 60,
+  "new_tests": [
+    "conversation_tutor_service_test.dart",
+    "homework_studio_service_test.dart",
+    "smart_revision_service_test.dart"
+  ],
+  "limitations": [
+    "Conversation is approved scenario-based dialogue, not unrestricted AI chat.",
+    "Homework feedback is structural and rule-based.",
+    "Parent export depends on platform file-save support.",
+    "Curriculum, scenarios and question banks remain sample content.",
+    "Flutter SDK, Unity Editor and physical Android testing were unavailable."
+  ]
+}

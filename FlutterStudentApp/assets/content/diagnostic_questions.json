@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "d0_letters",
+      "levelRank": 0,
+      "skill": "listening",
+      "question": "Which word begins with B?",
+      "options": [
+        "Apple",
+        "Ball",
+        "Cat"
+      ],
+      "correctIndex": 1,
+      "hint": "B says Ball."
+    },
+    {
+      "id": "d1_this_is",
+      "levelRank": 1,
+      "skill": "grammar",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "This is a book.",
+        "These is a book.",
+        "This are book."
+      ],
+      "correctIndex": 0,
+      "hint": "One nearby thing: This is."
+    },
+    {
+      "id": "d2_is_are",
+      "levelRank": 2,
+      "skill": "grammar",
+      "question": "The boys ___ playing.",
+      "options": [
+        "is",
+        "are",
+        "am"
+      ],
+      "correctIndex": 1,
+      "hint": "Boys is plural, so use are."
+    },
+    {
+      "id": "d3_present",
+      "levelRank": 3,
+      "skill": "grammar",
+      "question": "She ___ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "going"
+      ],
+      "correctIndex": 1,
+      "hint": "She takes goes."
+    },
+    {
+      "id": "d4_continuous",
+      "levelRank": 4,
+      "skill": "grammar",
+      "question": "He ___ now.",
+      "options": [
+        "reads",
+        "is reading",
+        "read"
+      ],
+      "correctIndex": 1,
+      "hint": "Now indicates present continuous."
+    },
+    {
+      "id": "d5_past",
+      "levelRank": 5,
+      "skill": "grammar",
+      "question": "Yesterday I ___ a letter.",
+      "options": [
+        "write",
+        "wrote",
+        "writing"
+      ],
+      "correctIndex": 1,
+      "hint": "The past form of write is wrote."
+    },
+    {
+      "id": "d6_future",
+      "levelRank": 6,
+      "skill": "grammar",
+      "question": "I ___ visit tomorrow.",
+      "options": [
+        "will",
+        "did",
+        "was"
+      ],
+      "correctIndex": 0,
+      "hint": "Use will for a future action."
+    },
+    {
+      "id": "d7_passive",
+      "levelRank": 7,
+      "skill": "reading",
+      "question": "'The letter was written by Rina' is—",
+      "options": [
+        "Active voice",
+        "Passive voice",
+        "A question"
+      ],
+      "correctIndex": 1,
+      "hint": "Was written by indicates passive voice."
+    },
+    {
+      "id": "d8_narration",
+      "levelRank": 8,
+      "skill": "grammar",
+      "question": "He said, 'I am tired.' becomes—",
+      "options": [
+        "He said that he was tired.",
+        "He said I tired.",
+        "He says that I am tired."
+      ],
+      "correctIndex": 0,
+      "hint": "Pronoun and tense change in indirect speech."
+    },
+    {
+      "id": "d9_transform",
+      "levelRank": 9,
+      "skill": "writing",
+      "question": "Choose the correct negative transformation.",
+      "options": [
+        "No one does not love freedom.",
+        "There is no one who does not love freedom.",
+        "Freedom no one loves."
+      ],
+      "correctIndex": 1,
+      "hint": "The meaning must remain unchanged."
+    },
+    {
+      "id": "d_vocab_kind",
+      "levelRank": 4,
+      "skill": "vocabulary",
+      "question": "Kind means—",
+      "options": [
+        "দয়ালু",
+        "অলস",
+        "রাগী"
+      ],
+      "correctIndex": 0,
+      "hint": "Kind means দয়ালু."
+    },
+    {
+      "id": "d_reading_report",
+      "levelRank": 7,
+      "skill": "writing",
+      "question": "A report should mainly contain—",
+      "options": [
+        "Facts",
+        "Only imagination",
+        "No heading"
+      ],
+      "correctIndex": 0,
+      "hint": "A report presents facts."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_9",
+  "units": [
+    {
+      "id": "class_9_unit_1",
+      "levelId": "class_9",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c9_transform",
+          "title": "Sentence Transformation",
+          "banglaTitle": "বাক্য রূপান্তর",
+          "skill": "grammar",
+          "estimatedMinutes": 18,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "Meaning না বদলে sentence form পরিবর্তন করতে হয়।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "'Everyone loves freedom' negative form—",
+              "options": [
+                "No one does not love freedom.",
+                "There is no one who does not love freedom.",
+                "Freedom no love."
+              ],
+              "correctIndex": 1,
+              "hint": "This preserves the meaning."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 5
+        },
+        {
+          "id": "c9_letter",
+          "title": "Formal Letter",
+          "banglaTitle": "আনুষ্ঠানিক পত্র",
+          "skill": "writing",
+          "estimatedMinutes": 20,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "Formal letter-এ address, date, receiver, subject, body এবং closing থাকে।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "The subject line should be—",
+              "options": [
+                "Clear and brief",
+                "A long story",
+                "Missing"
+              ],
+              "correctIndex": 0,
+              "hint": "Subject summarises the purpose."
+            }
+          ],
+          "prerequisites": [
+            "c9_transform"
+          ],
+          "stars": 5
+        }
+      ]
+    }
+  ]
+}

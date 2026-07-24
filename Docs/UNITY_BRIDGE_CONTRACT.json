@@ -1,0 +1,23 @@
+{
+  "gameObject": "MewtionaryTeacher",
+  "method": "ReceiveCommand",
+  "command": {
+    "state": "Welcome|Idle|Listening|Speaking|Thinking|Praise|Correction|Reading|Pointing|WritingBoard|Dancing|Laughing|Surprised|Sleepy|AdjustGlasses|Nodding",
+    "message": "string",
+    "prop": "None|Book|Pointer|Chalk",
+    "viseme": "0..6",
+    "gazeX": "-1..1",
+    "gazeY": "-1..1",
+    "duration": "seconds; 0 means persistent",
+    "lowMotion": "boolean"
+  },
+  "visemes": {
+    "0": "REST",
+    "1": "A",
+    "2": "E",
+    "3": "O",
+    "4": "M/B/P",
+    "5": "F/V",
+    "6": "L/R/T/D/N"
+  }
+}

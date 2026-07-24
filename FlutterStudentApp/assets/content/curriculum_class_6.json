@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_6",
+  "units": [
+    {
+      "id": "class_6_unit_1",
+      "levelId": "class_6",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c6_future",
+          "title": "Simple Future",
+          "banglaTitle": "সাধারণ ভবিষ্যৎ কাল",
+          "skill": "grammar",
+          "estimatedMinutes": 12,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "ভবিষ্যতের কাজ বোঝাতে will + base verb ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "I ___ visit tomorrow.",
+              "options": [
+                "will",
+                "did",
+                "am"
+              ],
+              "correctIndex": 0,
+              "hint": "Tomorrow-এর জন্য will।"
+            }
+          ],
+          "prerequisites": [],
+          "stars": 3
+        },
+        {
+          "id": "c6_dialogue",
+          "title": "Writing a Dialogue",
+          "banglaTitle": "সংলাপ লেখা",
+          "skill": "writing",
+          "estimatedMinutes": 15,
+          "teacherState": "speaking",
+          "content": {
+            "explanation": "Dialogue-এ natural question-answer এবং clear purpose থাকে।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "A dialogue is—",
+              "options": [
+                "A conversation",
+                "A map",
+                "A number list"
+              ],
+              "correctIndex": 0,
+              "hint": "Dialogue means conversation."
+            }
+          ],
+          "prerequisites": [
+            "c6_future"
+          ],
+          "stars": 4
+        }
+      ]
+    }
+  ]
+}

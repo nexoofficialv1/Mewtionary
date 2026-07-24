@@ -1,0 +1,31 @@
+{
+  "id": "sample_scenario",
+  "levelId": "class_4",
+  "title": "At the Library",
+  "banglaTitle": "গ্রন্থাগারে",
+  "location": "Library",
+  "intro": "Ask for a book politely.",
+  "startNodeId": "start",
+  "xp": 20,
+  "coins": 5,
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Librarian",
+      "prompt": "How can I help you?",
+      "banglaPrompt": "কীভাবে সাহায্য করতে পারি?",
+      "teacherHint": "Ask for a storybook.",
+      "isFinal": true,
+      "replies": [
+        {
+          "id": "reply",
+          "text": "May I borrow a storybook, please?",
+          "expectedKeywords": ["borrow", "storybook", "please"],
+          "teacherReply": "Certainly.",
+          "nextNodeId": null,
+          "score": 15
+        }
+      ]
+    }
+  ]
+}

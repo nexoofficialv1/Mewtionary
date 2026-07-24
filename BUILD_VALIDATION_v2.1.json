@@ -1,0 +1,36 @@
+{
+  "version": "2.1.0-production-integration",
+  "checks": {
+    "production_profile": true,
+    "production_adapter": true,
+    "bilingual_lipsync": true,
+    "lesson_director": true,
+    "touch_raycast": true,
+    "performance_governor": true,
+    "setup_wizard": true,
+    "android_validator": true,
+    "flutter_plugin": true,
+    "flutter_lesson_api": true,
+    "refined_glb": true
+  },
+  "unity_runtime_scripts": 13,
+  "unity_editor_scripts": 4,
+  "flutter_dart_files": 3,
+  "flutter_android_kotlin_files": 1,
+  "refined_glb_bytes": 251848,
+  "supported_lesson_flows": [
+    "dictionary",
+    "present_tense",
+    "story",
+    "listening",
+    "praise",
+    "gentle_correction"
+  ],
+  "remaining_external_steps": [
+    "professional final character sculpt and retopology",
+    "final toon texture atlas",
+    "facial blendshapes and polished animation clips",
+    "Unity Android Library export",
+    "physical device performance and audio testing"
+  ]
+}

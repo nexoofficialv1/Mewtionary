@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "packId": "mewtionary_starter_en_bn",
+  "name": "Mewtionary Starter English–Bangla Pack",
+  "version": "1.0.0",
+  "languagePair": "en-bn",
+  "entryCount": 16,
+  "license": "Original sample content included with the source package",
+  "sha256": "a547ad3b60ecf84693b432f81b82a6b5ceb75a4d07f78be6f2dad249de4f81c2"
+}

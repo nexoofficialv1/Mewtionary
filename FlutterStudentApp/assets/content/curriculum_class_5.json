@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_5",
+  "units": [
+    {
+      "id": "class_5_unit_1",
+      "levelId": "class_5",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c5_past",
+          "title": "Simple Past",
+          "banglaTitle": "সাধারণ অতীত কাল",
+          "skill": "grammar",
+          "estimatedMinutes": 12,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "অতীতে সম্পন্ন কাজ বোঝাতে verb-এর past form ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Yesterday I ___ a letter.",
+              "options": [
+                "write",
+                "wrote",
+                "writing"
+              ],
+              "correctIndex": 1,
+              "hint": "Write-এর past form wrote."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 3
+        },
+        {
+          "id": "c5_paragraph",
+          "title": "Descriptive Paragraph",
+          "banglaTitle": "বর্ণনামূলক অনুচ্ছেদ",
+          "skill": "writing",
+          "estimatedMinutes": 14,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "Opening sentence, details এবং closing sentence ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "A paragraph should have—",
+              "options": [
+                "One word",
+                "Beginning, details and ending",
+                "No punctuation"
+              ],
+              "correctIndex": 1,
+              "hint": "Paragraph-এর গঠন প্রয়োজন।"
+            }
+          ],
+          "prerequisites": [
+            "c5_past"
+          ],
+          "stars": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+id,levelId,type,prompt,answer,options,hint,xp,coins
+sample_game,class_4,sentenceBuilder,সঠিক বাক্য সাজাও,She is reading,reading|She|is,Subject comes first.,15,4

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_3",
+  "units": [
+    {
+      "id": "class_3_unit_1",
+      "levelId": "class_3",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c3_actions",
+          "title": "Daily Actions",
+          "banglaTitle": "দৈনন্দিন কাজ",
+          "skill": "vocabulary",
+          "estimatedMinutes": 9,
+          "teacherState": "speaking",
+          "content": {
+            "explanation": "Wake up, brush, eat, study and play describe daily actions."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Which action happens in the morning?",
+              "options": [
+                "Wake up",
+                "Sleep at night",
+                "Dream"
+              ],
+              "correctIndex": 0,
+              "hint": "We wake up in the morning."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 2
+        },
+        {
+          "id": "c3_present",
+          "title": "Simple Present",
+          "banglaTitle": "সাধারণ বর্তমান",
+          "skill": "grammar",
+          "estimatedMinutes": 10,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "অভ্যাস বোঝাতে Simple Present ব্যবহার হয়। He/She/It-এর সঙ্গে s বা es বসে।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "She ___ to school.",
+              "options": [
+                "go",
+                "goes",
+                "going"
+              ],
+              "correctIndex": 1,
+              "hint": "She-এর সঙ্গে goes হবে।"
+            }
+          ],
+          "prerequisites": [
+            "c3_actions"
+          ],
+          "stars": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "exercises": [
+    {
+      "id": "p_early_cat",
+      "levelId": "early",
+      "title": "Say Cat",
+      "target": "Cat",
+      "bangla": "বিড়াল",
+      "syllables": [
+        "cat"
+      ],
+      "focusSounds": [
+        "/k/",
+        "/æ/",
+        "/t/"
+      ],
+      "mouthTip": "মুখ সামান্য খুলে ছোট /æ/ sound বলো।",
+      "minimalPairs": [
+        "cat — cut",
+        "cap — cup"
+      ],
+      "xp": 8,
+      "coins": 2
+    },
+    {
+      "id": "p_c1_book",
+      "levelId": "class_1",
+      "title": "Book",
+      "target": "This is my book.",
+      "bangla": "এটি আমার বই।",
+      "syllables": [
+        "This",
+        "is",
+        "my",
+        "book"
+      ],
+      "focusSounds": [
+        "/ð/",
+        "/b/",
+        "/ʊ/"
+      ],
+      "mouthTip": "This বলার সময় জিহ্বার ডগা দাঁতের মাঝখানে হালকা রাখো।",
+      "minimalPairs": [
+        "this — dis",
+        "book — boot"
+      ],
+      "xp": 10,
+      "coins": 2
+    },
+    {
+      "id": "p_c2_school",
+      "levelId": "class_2",
+      "title": "School Sentence",
+      "target": "I go to school every day.",
+      "bangla": "আমি প্রতিদিন স্কুলে যাই।",
+      "syllables": [
+        "I",
+        "go",
+        "to",
+        "school",
+        "ev-ery",
+        "day"
+      ],
+      "focusSounds": [
+        "/sk/",
+        "/uː/",
+        "/eɪ/"
+      ],
+      "mouthTip": "School-এর শুরুতে s এবং k sound একসঙ্গে স্পষ্ট করো।",
+      "minimalPairs": [
+        "school — cool",
+        "day — they"
+      ],
+      "xp": 12,
+      "coins": 3
+    },
+    {
+      "id": "p_c3_three",
+      "levelId": "class_3",
+      "title": "Three Trees",
+      "target": "There are three trees.",
+      "bangla": "সেখানে তিনটি গাছ আছে।",
+      "syllables": [
+        "There",
+        "are",
+        "three",
+        "trees"
+      ],
+      "focusSounds": [
+        "/ð/",
+        "/θ/",
+        "/tr/"
+      ],
+      "mouthTip": "Three বলার সময় জিহ্বা দাঁতের ফাঁকে রেখে বাতাস ছাড়ো।",
+      "minimalPairs": [
+        "three — tree",
+        "then — den"
+      ],
+      "xp": 14,
+      "coins": 3
+    },
+    {
+      "id": "p_c4_beautiful",
+      "levelId": "class_4",
+      "title": "Beautiful Flower",
+      "target": "The flower is beautiful.",
+      "bangla": "ফুলটি সুন্দর।",
+      "syllables": [
+        "The",
+        "flow-er",
+        "is",
+        "beau-ti-ful"
+      ],
+      "focusSounds": [
+        "/f/",
+        "/aʊ/",
+        "/juː/"
+      ],
+      "mouthTip": "Flower-এ /f/ বলার সময় নিচের ঠোঁট উপরের দাঁতে ছোঁয়াও।",
+      "minimalPairs": [
+        "flower — flour",
+        "fan — van"
+      ],
+      "xp": 15,
+      "coins": 4
+    },
+    {
+      "id": "p_c4_ship_sheep",
+      "levelId": "class_4",
+      "title": "Ship and Sheep",
+      "target": "The sheep is on the ship.",
+      "bangla": "ভেড়াটি জাহাজে আছে।",
+      "syllables": [
+        "The",
+        "sheep",
+        "is",
+        "on",
+        "the",
+        "ship"
+      ],
+      "focusSounds": [
+        "/iː/",
+        "/ɪ/",
+        "/ʃ/"
+      ],
+      "mouthTip": "Sheep-এর vowel দীর্ঘ; ship-এর vowel ছোট।",
+      "minimalPairs": [
+        "ship — sheep",
+        "sit — seat"
+      ],
+      "xp": 16,
+      "coins": 4
+    },
+    {
+      "id": "p_c5_honesty",
+      "levelId": "class_5",
+      "title": "Honesty",
+      "target": "Honesty is the best policy.",
+      "bangla": "সততাই সর্বোত্তম নীতি।",
+      "syllables": [
+        "Hon-es-ty",
+        "is",
+        "the",
+        "best",
+        "pol-i-cy"
+      ],
+      "focusSounds": [
+        "/ɒ/",
+        "/st/",
+        "/p/"
+      ],
+      "mouthTip": "Honesty শব্দে h উচ্চারণ করো না।",
+      "minimalPairs": [
+        "honest — honour",
+        "best — vest"
+      ],
+      "xp": 18,
+      "coins": 5
+    },
+    {
+      "id": "p_c6_environment",
+      "levelId": "class_6",
+      "title": "Environment",
+      "target": "We should protect the environment.",
+      "bangla": "আমাদের পরিবেশ রক্ষা করা উচিত।",
+      "syllables": [
+        "We",
+        "should",
+        "pro-tect",
+        "the",
+        "en-vi-ron-ment"
+      ],
+      "focusSounds": [
+        "/v/",
+        "/r/",
+        "/mənt/"
+      ],
+      "mouthTip": "Environment ধীরে চারটি chunk-এ বলো: en-vi-ron-ment.",
+      "minimalPairs": [
+        "vine — wine",
+        "right — light"
+      ],
+      "xp": 20,
+      "coins": 5
+    },
+    {
+      "id": "p_c7_responsible",
+      "levelId": "class_7",
+      "title": "Responsible Learner",
+      "target": "A responsible learner completes every task.",
+      "bangla": "একজন দায়িত্বশীল শিক্ষার্থী প্রতিটি কাজ সম্পূর্ণ করে।",
+      "syllables": [
+        "A",
+        "re-spon-si-ble",
+        "learn-er",
+        "com-pletes",
+        "ev-ery",
+        "task"
+      ],
+      "focusSounds": [
+        "/r/",
+        "/sp/",
+        "/bl/"
+      ],
+      "mouthTip": "Responsible-এ syllable stress দ্বিতীয় অংশে দাও: re-SPON-si-ble.",
+      "minimalPairs": [
+        "right — light",
+        "play — pray"
+      ],
+      "xp": 22,
+      "coins": 6
+    },
+    {
+      "id": "p_c8_communication",
+      "levelId": "class_8",
+      "title": "Clear Communication",
+      "target": "Clear communication prevents misunderstanding.",
+      "bangla": "স্পষ্ট যোগাযোগ ভুল বোঝাবুঝি প্রতিরোধ করে।",
+      "syllables": [
+        "Clear",
+        "com-mu-ni-ca-tion",
+        "pre-vents",
+        "mis-un-der-stand-ing"
+      ],
+      "focusSounds": [
+        "/kl/",
+        "/kjuː/",
+        "/ʃən/"
+      ],
+      "mouthTip": "Communication-এ stress 'ca' অংশে: com-mu-ni-CA-tion.",
+      "minimalPairs": [
+        "clear — queer",
+        "ship — sip"
+      ],
+      "xp": 24,
+      "coins": 6
+    },
+    {
+      "id": "p_c9_confidence",
+      "levelId": "class_9",
+      "title": "Confident Speech",
+      "target": "Confidence grows through regular practice.",
+      "bangla": "নিয়মিত অনুশীলনের মাধ্যমে আত্মবিশ্বাস বাড়ে।",
+      "syllables": [
+        "Con-fi-dence",
+        "grows",
+        "through",
+        "reg-u-lar",
+        "prac-tice"
+      ],
+      "focusSounds": [
+        "/θr/",
+        "/gr/",
+        "/kt/"
+      ],
+      "mouthTip": "Through-এ /θ/ sound-এর পরে সঙ্গে সঙ্গে /r/ বলো।",
+      "minimalPairs": [
+        "through — true",
+        "grow — glow"
+      ],
+      "xp": 26,
+      "coins": 7
+    },
+    {
+      "id": "p_c9_development",
+      "levelId": "class_9",
+      "title": "Development",
+      "target": "Education supports sustainable development.",
+      "bangla": "শিক্ষা টেকসই উন্নয়নকে সহায়তা করে।",
+      "syllables": [
+        "Ed-u-ca-tion",
+        "sup-ports",
+        "sus-tain-a-ble",
+        "de-vel-op-ment"
+      ],
+      "focusSounds": [
+        "/dʒ/",
+        "/st/",
+        "/və/"
+      ],
+      "mouthTip": "Sustainable ও development শব্দ দুটি ধীরে chunk করে বলো।",
+      "minimalPairs": [
+        "education — indication",
+        "support — sport"
+      ],
+      "xp": 28,
+      "coins": 7
+    }
+  ]
+}

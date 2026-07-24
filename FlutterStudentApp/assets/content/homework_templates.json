@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "id": "sentence_daily",
+      "levelId": "class_2",
+      "type": "sentence",
+      "title": "Make a Sentence",
+      "banglaTitle": "বাক্য তৈরি",
+      "instructions": "Use the given word in one meaningful sentence.",
+      "fields": [
+        {
+          "key": "word",
+          "label": "Word",
+          "hint": "beautiful",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "sentence",
+          "label": "Your sentence",
+          "hint": "The flower is beautiful.",
+          "required": true,
+          "multiline": true
+        }
+      ],
+      "outputTemplate": "Word: {{word}}\nSentence: {{sentence}}",
+      "checklist": [
+        "Capital letter",
+        "Complete meaning",
+        "Full stop"
+      ]
+    },
+    {
+      "id": "paragraph_morning",
+      "levelId": "class_4",
+      "type": "paragraph",
+      "title": "My Morning Routine",
+      "banglaTitle": "আমার সকালের কাজ",
+      "instructions": "Write a short paragraph in a logical order.",
+      "fields": [
+        {
+          "key": "opening",
+          "label": "Opening sentence",
+          "hint": "I get up early in the morning.",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "activities",
+          "label": "Main activities",
+          "hint": "Brush, exercise, breakfast, school preparation…",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "closing",
+          "label": "Closing sentence",
+          "hint": "A good routine keeps me active.",
+          "required": true,
+          "multiline": false
+        }
+      ],
+      "outputTemplate": "{{opening}} {{activities}} {{closing}}",
+      "checklist": [
+        "Logical order",
+        "Present tense",
+        "Punctuation",
+        "No repeated sentence"
+      ]
+    },
+    {
+      "id": "letter_leave",
+      "levelId": "class_6",
+      "type": "letter",
+      "title": "Application for Leave",
+      "banglaTitle": "ছুটির আবেদন",
+      "instructions": "Complete the formal application with correct structure.",
+      "fields": [
+        {
+          "key": "date",
+          "label": "Date",
+          "hint": "24 July 2026",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "recipient",
+          "label": "Recipient",
+          "hint": "The Head Teacher, ABC School",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "subject",
+          "label": "Subject",
+          "hint": "Prayer for two days' leave",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "reason",
+          "label": "Reason and period",
+          "hint": "I am suffering from fever…",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "name",
+          "label": "Student details",
+          "hint": "Yours obediently, Name, Class, Roll",
+          "required": true,
+          "multiline": true
+        }
+      ],
+      "outputTemplate": "{{date}}\n\nTo\n{{recipient}}\n\nSubject: {{subject}}\n\nSir/Madam,\n{{reason}}\n\n{{name}}",
+      "checklist": [
+        "Date",
+        "Recipient",
+        "Subject",
+        "Polite request",
+        "Name/Class/Roll"
+      ]
+    },
+    {
+      "id": "notice_event",
+      "levelId": "class_8",
+      "type": "notice",
+      "title": "School Event Notice",
+      "banglaTitle": "বিদ্যালয়ের অনুষ্ঠানের নোটিশ",
+      "instructions": "Write a concise notice with all essential facts.",
+      "fields": [
+        {
+          "key": "school",
+          "label": "School name",
+          "hint": "ABC High School",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "date",
+          "label": "Notice date",
+          "hint": "24 July 2026",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "heading",
+          "label": "Heading",
+          "hint": "Tree Plantation Programme",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "details",
+          "label": "What, when, where and who",
+          "hint": "The programme will be held…",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "signature",
+          "label": "Signature/Designation",
+          "hint": "Secretary, Students' Council",
+          "required": true,
+          "multiline": false
+        }
+      ],
+      "outputTemplate": "{{school}}\nNOTICE\n{{date}}\n\n{{heading}}\n\n{{details}}\n\n{{signature}}",
+      "checklist": [
+        "NOTICE heading",
+        "Date",
+        "Event details",
+        "Time/place",
+        "Designation"
+      ]
+    },
+    {
+      "id": "report_awareness",
+      "levelId": "class_9",
+      "type": "report",
+      "title": "Awareness Programme Report",
+      "banglaTitle": "সচেতনতা কর্মসূচির প্রতিবেদন",
+      "instructions": "Write a factual report with heading, date, participants, activities and outcome.",
+      "fields": [
+        {
+          "key": "heading",
+          "label": "Report heading",
+          "hint": "Awareness Programme on Road Safety",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "dateplace",
+          "label": "Date and place",
+          "hint": "On 20 July 2026 at…",
+          "required": true,
+          "multiline": false
+        },
+        {
+          "key": "participants",
+          "label": "Participants",
+          "hint": "Students, teachers and local officials…",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "activities",
+          "label": "Main activities",
+          "hint": "Speeches, demonstration, rally…",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "outcome",
+          "label": "Conclusion/outcome",
+          "hint": "The programme concluded with…",
+          "required": true,
+          "multiline": true
+        }
+      ],
+      "outputTemplate": "{{heading}}\n\n{{dateplace}} {{participants}} {{activities}} {{outcome}}",
+      "checklist": [
+        "Factual tone",
+        "Past tense",
+        "Participants",
+        "Activities",
+        "Outcome"
+      ]
+    }
+  ]
+}

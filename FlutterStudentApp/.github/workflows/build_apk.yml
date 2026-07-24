@@ -1,0 +1,52 @@
+name: Build Mewtionary Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Validate curriculum and packs
+        run: python3 ContentTools/validate_content.py
+
+      - name: Generate Android host project
+        working-directory: FlutterStudentApp
+        run: |
+          flutter create --platforms=android --project-name mewtionary_student .
+
+      - name: Prepare microphone permissions
+        working-directory: FlutterStudentApp
+        run: python3 tool/prepare_android.py
+
+      - name: Get packages
+        working-directory: FlutterStudentApp
+        run: flutter pub get
+
+      - name: Analyse
+        working-directory: FlutterStudentApp
+        run: flutter analyze
+
+      - name: Test
+        working-directory: FlutterStudentApp
+        run: flutter test
+
+      - name: Build fallback APK
+        working-directory: FlutterStudentApp
+        run: flutter build apk --debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mewtionary-v2.2-debug-apk
+          path: FlutterStudentApp/build/app/outputs/flutter-apk/app-debug.apk

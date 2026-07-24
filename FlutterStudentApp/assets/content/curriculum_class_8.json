@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_8",
+  "units": [
+    {
+      "id": "class_8_unit_1",
+      "levelId": "class_8",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c8_narration",
+          "title": "Direct and Indirect Speech",
+          "banglaTitle": "প্রত্যক্ষ ও পরোক্ষ উক্তি",
+          "skill": "grammar",
+          "estimatedMinutes": 17,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "Reporting অনুযায়ী tense ও pronoun পরিবর্তন করে indirect speech তৈরি হয়।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "He said, 'I am tired.' becomes—",
+              "options": [
+                "He said that he was tired.",
+                "He says I tired.",
+                "He said tired I."
+              ],
+              "correctIndex": 0,
+              "hint": "Pronoun and tense change."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 4
+        },
+        {
+          "id": "c8_notice",
+          "title": "Notice Writing",
+          "banglaTitle": "বিজ্ঞপ্তি লেখা",
+          "skill": "writing",
+          "estimatedMinutes": 18,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "Notice-এ name, date, heading, body এবং signature থাকে।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "A notice must include—",
+              "options": [
+                "Heading and date",
+                "Only a poem",
+                "No purpose"
+              ],
+              "correctIndex": 0,
+              "hint": "Heading and date are essential."
+            }
+          ],
+          "prerequisites": [
+            "c8_narration"
+          ],
+          "stars": 5
+        }
+      ]
+    }
+  ]
+}

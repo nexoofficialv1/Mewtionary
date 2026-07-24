@@ -1,0 +1,28 @@
+abstract final class AppRoutes {
+  static const home = '/';
+  static const dictionary = '/dictionary';
+  static const tense = '/tense';
+  static const story = '/story';
+  static const voice = '/voice';
+  static const progress = '/progress';
+  static const learningPath = '/learning-path';
+  static const dictionaryPacks = '/dictionary-packs';
+  static const parentControls = '/parent-controls';
+  static const dailyLearning = '/daily-learning';
+  static const diagnostic = '/diagnostic';
+  static const writingPractice = '/writing-practice';
+  static const parentDashboard = '/parent-dashboard';
+  static const studentProfile = '/student-profile';
+  static const learningGames = '/learning-games';
+  static const listeningLab = '/listening-lab';
+  static const storyAdventures = '/story-adventures';
+  static const rewards = '/rewards';
+  static const conversationLab = '/conversation-lab';
+  static const homeworkStudio = '/homework-studio';
+  static const smartRevision = '/smart-revision';
+  static const parentReport = '/parent-report';
+  static const pronunciationCoach = '/pronunciation-coach';
+  static const mockExam = '/mock-exam';
+  static const studyPlanner = '/study-planner';
+  static const certificateStudio = '/certificate-studio';
+}

@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "papers": [
+    {
+      "id": "exam_c1_basics",
+      "levelId": "class_1",
+      "title": "Class 1 English Basics",
+      "banglaTitle": "প্রথম শ্রেণির ইংরেজি পরীক্ষা",
+      "durationMinutes": 10,
+      "instructions": [
+        "Answer all questions.",
+        "Check before submitting."
+      ],
+      "xp": 25,
+      "coins": 6,
+      "questions": [
+        {
+          "id": "c1_q1",
+          "type": "mcq",
+          "skill": "vocabulary",
+          "prompt": "Which word means বই?",
+          "options": [
+            "Book",
+            "Ball",
+            "Bird"
+          ],
+          "answer": "Book",
+          "acceptedAnswers": [
+            "book"
+          ],
+          "explanation": "Book means বই।",
+          "marks": 1
+        },
+        {
+          "id": "c1_q2",
+          "type": "fillBlank",
+          "skill": "grammar",
+          "prompt": "Fill in: ___ apple",
+          "options": [],
+          "answer": "an",
+          "acceptedAnswers": [
+            "an"
+          ],
+          "explanation": "Use an before a vowel sound.",
+          "marks": 1
+        },
+        {
+          "id": "c1_q3",
+          "type": "rearrange",
+          "skill": "grammar",
+          "prompt": "Arrange: is / This / a / cat",
+          "options": [],
+          "answer": "This is a cat",
+          "acceptedAnswers": [
+            "this is a cat",
+            "this is a cat."
+          ],
+          "explanation": "Subject comes first.",
+          "marks": 2
+        }
+      ]
+    },
+    {
+      "id": "exam_c4_term",
+      "levelId": "class_4",
+      "title": "Class 4 Term Practice",
+      "banglaTitle": "চতুর্থ শ্রেণির টার্ম অনুশীলন",
+      "durationMinutes": 18,
+      "instructions": [
+        "Use complete sentences.",
+        "No negative marking."
+      ],
+      "xp": 38,
+      "coins": 10,
+      "questions": [
+        {
+          "id": "c4_q1",
+          "type": "mcq",
+          "skill": "grammar",
+          "prompt": "They ___ now.",
+          "options": [
+            "play",
+            "played",
+            "are playing"
+          ],
+          "answer": "are playing",
+          "acceptedAnswers": [
+            "are playing"
+          ],
+          "explanation": "Now indicates present continuous.",
+          "marks": 1
+        },
+        {
+          "id": "c4_q2",
+          "type": "fillBlank",
+          "skill": "vocabulary",
+          "prompt": "Kind means ___ in Bangla.",
+          "options": [],
+          "answer": "দয়ালু",
+          "acceptedAnswers": [
+            "দয়ালু",
+            "दयालु"
+          ],
+          "explanation": "Kind means দয়ালু।",
+          "marks": 1
+        },
+        {
+          "id": "c4_q3",
+          "type": "rearrange",
+          "skill": "grammar",
+          "prompt": "Arrange: every day / school / goes to / She",
+          "options": [],
+          "answer": "She goes to school every day",
+          "acceptedAnswers": [
+            "she goes to school every day",
+            "she goes to school every day."
+          ],
+          "explanation": "Use subject + verb + place + time.",
+          "marks": 2
+        },
+        {
+          "id": "c4_q4",
+          "type": "shortAnswer",
+          "skill": "writing",
+          "prompt": "Write one sentence about your morning routine.",
+          "options": [],
+          "answer": "I get up early in the morning.",
+          "acceptedAnswers": [],
+          "explanation": "Any meaningful complete sentence receives marks.",
+          "marks": 2
+        }
+      ]
+    },
+    {
+      "id": "exam_c6_grammar_writing",
+      "levelId": "class_6",
+      "title": "Class 6 Grammar and Writing",
+      "banglaTitle": "ষষ্ঠ শ্রেণির ব্যাকরণ ও লেখা",
+      "durationMinutes": 22,
+      "instructions": [
+        "Attempt every section.",
+        "Write clearly."
+      ],
+      "xp": 45,
+      "coins": 12,
+      "questions": [
+        {
+          "id": "c6_q1",
+          "type": "mcq",
+          "skill": "grammar",
+          "prompt": "I ___ visit tomorrow.",
+          "options": [
+            "will",
+            "did",
+            "was"
+          ],
+          "answer": "will",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "Will expresses future action.",
+          "marks": 1
+        },
+        {
+          "id": "c6_q2",
+          "type": "fillBlank",
+          "skill": "grammar",
+          "prompt": "Past form of go is ___.",
+          "options": [],
+          "answer": "went",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "Went is the simple past form.",
+          "marks": 1
+        },
+        {
+          "id": "c6_q3",
+          "type": "rearrange",
+          "skill": "grammar",
+          "prompt": "Arrange: should / environment / the / protect / We",
+          "options": [],
+          "answer": "We should protect the environment",
+          "acceptedAnswers": [
+            "we should protect the environment",
+            "we should protect the environment."
+          ],
+          "explanation": "Modal should comes before the base verb.",
+          "marks": 2
+        },
+        {
+          "id": "c6_q4",
+          "type": "shortAnswer",
+          "skill": "writing",
+          "prompt": "Write the subject line of an application for two days' leave.",
+          "options": [],
+          "answer": "Prayer for two days' leave",
+          "acceptedAnswers": [
+            "prayer for two days leave",
+            "prayer for two days' leave",
+            "application for two days leave"
+          ],
+          "explanation": "The subject should state the purpose clearly.",
+          "marks": 2
+        }
+      ]
+    },
+    {
+      "id": "exam_c8_language",
+      "levelId": "class_8",
+      "title": "Class 8 Language Practice",
+      "banglaTitle": "অষ্টম শ্রেণির ভাষা অনুশীলন",
+      "durationMinutes": 25,
+      "instructions": [
+        "Read every question carefully.",
+        "Review answers before submit."
+      ],
+      "xp": 52,
+      "coins": 14,
+      "questions": [
+        {
+          "id": "c8_q1",
+          "type": "mcq",
+          "skill": "grammar",
+          "prompt": "He said, 'I am tired.' becomes—",
+          "options": [
+            "He said that he was tired.",
+            "He said that I am tired.",
+            "He tired."
+          ],
+          "answer": "He said that he was tired.",
+          "acceptedAnswers": [
+            "he said that he was tired"
+          ],
+          "explanation": "Pronoun and tense change in indirect speech.",
+          "marks": 2
+        },
+        {
+          "id": "c8_q2",
+          "type": "fillBlank",
+          "skill": "writing",
+          "prompt": "A notice must contain a clear ___.",
+          "options": [],
+          "answer": "heading",
+          "acceptedAnswers": [
+            "heading",
+            "title"
+          ],
+          "explanation": "A clear heading tells the purpose.",
+          "marks": 1
+        },
+        {
+          "id": "c8_q3",
+          "type": "rearrange",
+          "skill": "grammar",
+          "prompt": "Arrange: completed / was / the work / on time",
+          "options": [],
+          "answer": "The work was completed on time",
+          "acceptedAnswers": [
+            "the work was completed on time",
+            "the work was completed on time."
+          ],
+          "explanation": "This is a passive sentence.",
+          "marks": 2
+        },
+        {
+          "id": "c8_q4",
+          "type": "shortAnswer",
+          "skill": "writing",
+          "prompt": "Write one essential detail that a school event notice should include.",
+          "options": [],
+          "answer": "The date and time of the event.",
+          "acceptedAnswers": [],
+          "explanation": "Date, time, place or eligible participants are acceptable.",
+          "marks": 2
+        }
+      ]
+    },
+    {
+      "id": "exam_c9_final",
+      "levelId": "class_9",
+      "title": "Class 9 Final Readiness",
+      "banglaTitle": "নবম শ্রেণির চূড়ান্ত প্রস্তুতি",
+      "durationMinutes": 30,
+      "instructions": [
+        "Answer in complete English.",
+        "Short answers are checked with accepted key ideas."
+      ],
+      "xp": 60,
+      "coins": 16,
+      "questions": [
+        {
+          "id": "c9_q1",
+          "type": "mcq",
+          "skill": "reading",
+          "prompt": "An inference is—",
+          "options": [
+            "a conclusion based on clues",
+            "a copied sentence",
+            "a punctuation mark"
+          ],
+          "answer": "a conclusion based on clues",
+          "acceptedAnswers": [
+            "a conclusion based on clues"
+          ],
+          "explanation": "Inference uses evidence from a passage.",
+          "marks": 2
+        },
+        {
+          "id": "c9_q2",
+          "type": "fillBlank",
+          "skill": "grammar",
+          "prompt": "If I ___ time, I would help you.",
+          "options": [],
+          "answer": "had",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "Second conditional uses past form in the if-clause.",
+          "marks": 1
+        },
+        {
+          "id": "c9_q3",
+          "type": "rearrange",
+          "skill": "grammar",
+          "prompt": "Arrange: regular practice / confidence / through / grows",
+          "options": [],
+          "answer": "Confidence grows through regular practice",
+          "acceptedAnswers": [
+            "confidence grows through regular practice",
+            "confidence grows through regular practice."
+          ],
+          "explanation": "Use subject + verb + prepositional phrase.",
+          "marks": 2
+        },
+        {
+          "id": "c9_q4",
+          "type": "shortAnswer",
+          "skill": "writing",
+          "prompt": "Write one factual opening sentence for a report on a school awareness programme.",
+          "options": [],
+          "answer": "An awareness programme was held at our school on Monday.",
+          "acceptedAnswers": [],
+          "explanation": "A factual sentence with event, place and time earns marks.",
+          "marks": 3
+        }
+      ]
+    }
+  ]
+}

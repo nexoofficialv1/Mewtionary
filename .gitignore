@@ -1,0 +1,38 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+[Bb]uild/
+[Bb]uilds/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Flutter and Dart generated files
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+android/.gradle/
+android/local.properties
+ios/Pods/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db

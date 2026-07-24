@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_4",
+  "units": [
+    {
+      "id": "class_4_unit_1",
+      "levelId": "class_4",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c4_subject",
+          "title": "Subject and Predicate",
+          "banglaTitle": "Subject ও Predicate",
+          "skill": "grammar",
+          "estimatedMinutes": 10,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "কার বা কিসের কথা বলা হয় সেটি Subject; তার সম্পর্কে যা বলা হয় সেটি Predicate."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "In 'Rina sings well', the subject is—",
+              "options": [
+                "sings well",
+                "Rina",
+                "well"
+              ],
+              "correctIndex": 1,
+              "hint": "Rina is the subject."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 2
+        },
+        {
+          "id": "c4_continuous",
+          "title": "Present Continuous",
+          "banglaTitle": "ঘটমান বর্তমান কাল",
+          "skill": "grammar",
+          "estimatedMinutes": 11,
+          "teacherState": "writingBoard",
+          "content": {
+            "explanation": "চলমান কাজ বোঝাতে am/is/are + verb-ing ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "He ___ now.",
+              "options": [
+                "reads",
+                "is reading",
+                "read"
+              ],
+              "correctIndex": 1,
+              "hint": "Now থাকায় is reading হবে।"
+            }
+          ],
+          "prerequisites": [
+            "c4_subject"
+          ],
+          "stars": 3
+        },
+        {
+          "id": "c4_story",
+          "title": "The Kind Lion",
+          "banglaTitle": "দয়ালু সিংহ",
+          "skill": "story",
+          "estimatedMinutes": 12,
+          "teacherState": "reading",
+          "content": {
+            "explanation": "Read a short story and identify kindness and sequence."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Kind means—",
+              "options": [
+                "নিষ্ঠুর",
+                "দয়ালু",
+                "অলস"
+              ],
+              "correctIndex": 1,
+              "hint": "Kind মানে দয়ালু।"
+            }
+          ],
+          "prerequisites": [
+            "c4_continuous"
+          ],
+          "stars": 3
+        }
+      ]
+    }
+  ]
+}

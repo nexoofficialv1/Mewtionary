@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "levelId": "class_2",
+  "units": [
+    {
+      "id": "class_2_unit_1",
+      "levelId": "class_2",
+      "title": "Foundation Learning Unit",
+      "banglaTitle": "ভিত্তিমূলক শেখার ইউনিট",
+      "description": "A structured sample unit for this learning level.",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "c2_school",
+          "title": "At School",
+          "banglaTitle": "বিদ্যালয়ে",
+          "skill": "vocabulary",
+          "estimatedMinutes": 8,
+          "teacherState": "speaking",
+          "content": {
+            "explanation": "Classroom, teacher, student, book and pencil are school words."
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "Who teaches in a school?",
+              "options": [
+                "Student",
+                "Teacher",
+                "Driver"
+              ],
+              "correctIndex": 1,
+              "hint": "Teacher teaches students."
+            }
+          ],
+          "prerequisites": [],
+          "stars": 2
+        },
+        {
+          "id": "c2_is_are",
+          "title": "Is and Are",
+          "banglaTitle": "Is ও Are",
+          "skill": "grammar",
+          "estimatedMinutes": 8,
+          "teacherState": "pointing",
+          "content": {
+            "explanation": "একজন বা একটি হলে is, একাধিক হলে are ব্যবহার করি।"
+          },
+          "activities": [
+            {
+              "type": "mcq",
+              "question": "The boys ___ playing.",
+              "options": [
+                "is",
+                "are",
+                "am"
+              ],
+              "correctIndex": 1,
+              "hint": "Boys plural, তাই are."
+            }
+          ],
+          "prerequisites": [
+            "c2_school"
+          ],
+          "stars": 2
+        }
+      ]
+    }
+  ]
+}

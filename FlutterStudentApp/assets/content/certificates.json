@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "certificates": [
+    {
+      "id": "first_100_xp",
+      "title": "Rising Learner Certificate",
+      "banglaTitle": "উদীয়মান শিক্ষার্থী সনদ",
+      "description": "Earn 100 XP.",
+      "icon": "⭐",
+      "ruleType": "xp",
+      "threshold": 100
+    },
+    {
+      "id": "pronunciation_5",
+      "title": "Clear Speaker Certificate",
+      "banglaTitle": "স্পষ্ট বক্তা সনদ",
+      "description": "Complete 5 pronunciation exercises successfully.",
+      "icon": "🎙️",
+      "ruleType": "pronunciation",
+      "threshold": 5
+    },
+    {
+      "id": "exam_pass_3",
+      "title": "Exam Ready Certificate",
+      "banglaTitle": "পরীক্ষার জন্য প্রস্তুত সনদ",
+      "description": "Pass 3 mock exams.",
+      "icon": "📝",
+      "ruleType": "exam",
+      "threshold": 3
+    },
+    {
+      "id": "study_week",
+      "title": "Weekly Study Champion",
+      "banglaTitle": "সাপ্তাহিক অধ্যয়ন চ্যাম্পিয়ন",
+      "description": "Complete 7 study-plan tasks.",
+      "icon": "📅",
+      "ruleType": "studyTasks",
+      "threshold": 7
+    },
+    {
+      "id": "xp_500",
+      "title": "Mewtionary Scholar",
+      "banglaTitle": "মিউশনারি স্কলার",
+      "description": "Earn 500 XP.",
+      "icon": "🏆",
+      "ruleType": "xp",
+      "threshold": 500
+    }
+  ]
+}
