@@ -67,7 +67,7 @@ class _VoicePracticeScreenState extends State<VoicePracticeScreen> {
         setState(() => heard = result.recognizedWords);
         if (result.finalResult) _evaluate(result.recognizedWords);
       },
-      listenOptions: const SpeechListenOptions(
+      listenOptions: SpeechListenOptions(
         localeId: 'en_US',
         partialResults: true,
         cancelOnError: true,

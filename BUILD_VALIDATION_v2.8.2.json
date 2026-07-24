@@ -1,0 +1,36 @@
+{
+  "version": "2.8.2+30",
+  "purpose": "Second Flutter analyzer build fix",
+  "checks": {
+    "version_2_8_2": true,
+    "no_const_speech_options": true,
+    "conversation_speech_fixed": true,
+    "listening_speech_fixed": true,
+    "pronunciation_speech_fixed": true,
+    "voice_speech_fixed": true,
+    "reported_relative_imports_removed": true,
+    "reported_test_imports_removed": true,
+    "unity_still_absent": true,
+    "workflow_still_flutter_only": true,
+    "nonfatal_infos_and_warnings": true
+  },
+  "fixed_errors": [
+    "conversation_lab_screen.dart const_with_non_const",
+    "listening_lab_screen.dart const_with_non_const",
+    "pronunciation_coach_screen.dart const_with_non_const",
+    "voice_practice_screen.dart const_with_non_const"
+  ],
+  "cleaned_information_notices": [
+    "duplicate curriculum import in mewtionary_database.dart",
+    "duplicate curriculum import in daily_plan_service.dart",
+    "duplicate curriculum import in diagnostic_service.dart",
+    "duplicate curriculum import in learning_analytics_service.dart",
+    "duplicate curriculum import in student_profile_service.dart",
+    "duplicate curriculum import in writing_practice_service.dart",
+    "duplicate curriculum imports in two tests"
+  ],
+  "remaining_nonfatal_information": [
+    "mock_exam_screen.dart uses deprecated Radio groupValue/onChanged API"
+  ],
+  "limitation": "Flutter SDK was unavailable in this environment. GitHub Actions must confirm analysis, tests and APK compilation."
+}

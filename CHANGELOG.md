@@ -1,6 +1,18 @@
 # Changelog
 
 
+## 2.8.2
+
+### Fixed
+- Removed invalid `const` from four `SpeechListenOptions` constructor calls.
+- Removed analyzer-reported duplicate curriculum model imports.
+- Updated the GitHub APK artifact name to v2.8.2.
+
+### Remaining informational notice
+- Flutter's legacy `Radio` `groupValue` and `onChanged` API is deprecated.
+  It is non-fatal in the current workflow and does not block compilation.
+
+
 ## 2.8.1
 
 ### Fixed

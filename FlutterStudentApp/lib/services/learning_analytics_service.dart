@@ -2,7 +2,6 @@ import '../curriculum/curriculum_engine.dart';
 import '../curriculum/curriculum_repository.dart';
 import '../data/mewtionary_database.dart';
 import '../models/adaptive_learning_models.dart';
-import '../models/curriculum_models.dart';
 
 class LearningAnalyticsService {
   LearningAnalyticsService({

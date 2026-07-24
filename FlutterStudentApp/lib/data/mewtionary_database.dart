@@ -4,7 +4,6 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
 import '../models/adaptive_learning_models.dart';
-import '../models/curriculum_models.dart';
 
 class MewtionaryDatabase {
   MewtionaryDatabase._();

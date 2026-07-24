@@ -227,7 +227,7 @@ class _ConversationPlayerScreenState
     setState(() => listening = true);
     await widget.teacher.listen();
     await speech.listen(
-      listenOptions: const SpeechListenOptions(
+      listenOptions: SpeechListenOptions(
         localeId: 'en_US',
       ),
       onResult: (result) {

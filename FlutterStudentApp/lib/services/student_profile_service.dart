@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 
 import '../data/mewtionary_database.dart';
 import '../models/adaptive_learning_models.dart';
-import '../models/curriculum_models.dart';
 
 class StudentProfileService extends ChangeNotifier {
   StudentProfileService({MewtionaryDatabase? database})

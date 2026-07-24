@@ -94,7 +94,7 @@ class _PronunciationCoachScreenState
     });
     await widget.teacher.listen();
     await speech.listen(
-      listenOptions: const SpeechListenOptions(
+      listenOptions: SpeechListenOptions(
         localeId: 'en_US',
         partialResults: true,
         cancelOnError: true,

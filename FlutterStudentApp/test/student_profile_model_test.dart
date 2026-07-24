@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mewtionary_student/models/adaptive_learning_models.dart';
-import 'package:mewtionary_student/models/curriculum_models.dart';
 
 void main() {
   test('student profile round-trips through map', () {
