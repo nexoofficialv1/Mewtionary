@@ -128,7 +128,7 @@ class HomeworkStudioService {
     final safeName = title
         .replaceAll(RegExp(r'[^A-Za-z0-9_-]+'), '_')
         .replaceAll(RegExp(r'_+'), '_');
-    return FilePicker.platform.saveFile(
+    return FilePicker.saveFile(
       dialogTitle: 'Save homework',
       fileName: '${safeName.isEmpty ? "homework" : safeName}.txt',
       type: FileType.custom,

@@ -73,7 +73,7 @@ class CertificateService {
       RegExp(r'[^a-zA-Z0-9_-]'),
       '_',
     );
-    return FilePicker.platform.saveFile(
+    return FilePicker.saveFile(
       dialogTitle: 'Save certificate',
       fileName: 'Mewtionary_$safe.html',
       type: FileType.custom,

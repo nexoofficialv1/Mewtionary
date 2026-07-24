@@ -1,10 +1,10 @@
 name: mewtionary_student
 description: Mewtionary offline-first English-Bangla learning app without Unity or a visual guide.
 publish_to: "none"
-version: 2.8.2+30
+version: 2.8.3+31
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -14,7 +14,7 @@ dependencies:
   shared_preferences: ^2.3.3
   sqflite: ^2.4.1
   path: ^1.9.1
-  file_picker: ^8.1.7
+  file_picker: ^11.0.2
   crypto: ^3.0.6
 
 dev_dependencies:

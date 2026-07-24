@@ -1,6 +1,22 @@
 # Changelog
 
 
+## 2.8.3
+
+### Fixed
+- Upgraded `file_picker` from 8.1.7 to 11.0.2.
+- Migrated FilePicker calls from the legacy instance API to static methods.
+- Enforced Android `compileSdk = 36` in the generated Flutter host project.
+- Added Android SDK Platform 36 and Build Tools 36.0.0 installation to CI.
+- Pinned GitHub Actions to Flutter 3.44.7 for reproducible builds.
+- Updated minimum Dart SDK to 3.4.
+
+### Build issue addressed
+- AAR metadata failure where `flutter_plugin_android_lifecycle` required
+  compile SDK 36 while the old `file_picker` Android module compiled
+  against Android 34.
+
+
 ## 2.8.2
 
 ### Fixed

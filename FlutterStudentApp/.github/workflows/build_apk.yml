@@ -14,8 +14,16 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.44.7'
           channel: stable
           cache: true
+
+
+- name: Install Android SDK 36
+  run: |
+    SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+    yes | "$SDKMANAGER" --licenses >/dev/null || true
+    "$SDKMANAGER" "platforms;android-36" "build-tools;36.0.0"
 
       - name: Validate curriculum and content packs
         run: python3 ../ContentTools/validate_content.py
@@ -47,5 +55,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Mewtionary-v2.8.2-Flutter-only-debug-apk
+          name: Mewtionary-v2.8.3-Flutter-only-debug-apk
           path: FlutterStudentApp/build/app/outputs/flutter-apk/app-debug.apk

@@ -61,7 +61,7 @@ class _DictionaryPackManagerScreenState
   }
 
   Future<void> _external() async {
-    final manifest = await FilePicker.platform.pickFiles(
+    final manifest = await FilePicker.pickFiles(
       dialogTitle: 'Select manifest JSON',
       type: FileType.custom,
       allowedExtensions: const ['json'],
@@ -69,7 +69,7 @@ class _DictionaryPackManagerScreenState
     );
     if (manifest == null) return;
 
-    final data = await FilePicker.platform.pickFiles(
+    final data = await FilePicker.pickFiles(
       dialogTitle: 'Select entries JSONL',
       type: FileType.custom,
       allowedExtensions: const ['jsonl', 'txt'],

@@ -1,0 +1,28 @@
+{
+  "version": "2.8.3+31",
+  "purpose": "Android API 36 and file_picker compatibility fix",
+  "checks": {
+    "version_2_8_3": true,
+    "dart_min_3_4": true,
+    "file_picker_11_0_2": true,
+    "legacy_file_picker_api_removed": true,
+    "static_pick_api_present": true,
+    "static_save_api_present": true,
+    "compile_sdk_36_script": true,
+    "flutter_pinned": true,
+    "sdk_36_installed": true,
+    "build_tools_36_installed": true,
+    "artifact_updated": true,
+    "unity_absent": true
+  },
+  "changes": [
+    "file_picker upgraded from 8.1.7 to 11.0.2",
+    "FilePicker.platform calls migrated to FilePicker static calls",
+    "compileSdk forced to 36",
+    "Android SDK 36 installed in GitHub Actions",
+    "Flutter pinned to 3.44.7",
+    "Dart minimum set to 3.4"
+  ],
+  "expected_artifact": "Mewtionary-v2.8.3-Flutter-only-debug-apk",
+  "limitation": "Flutter SDK is not installed in this execution environment. The next GitHub Actions run must confirm dependency resolution, Gradle compilation, tests and APK output."
+}

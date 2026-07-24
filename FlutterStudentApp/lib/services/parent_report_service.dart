@@ -194,7 +194,7 @@ Study tasks completed: ${report.completedStudyTasks}</div>
   Future<String?> exportHtml(
     ParentReportSnapshot report,
   ) {
-    return FilePicker.platform.saveFile(
+    return FilePicker.saveFile(
       dialogTitle: 'Save parent report',
       fileName: 'mewtionary_parent_report.html',
       type: FileType.custom,
@@ -208,7 +208,7 @@ Study tasks completed: ${report.completedStudyTasks}</div>
   Future<String?> exportCsv(
     ParentReportSnapshot report,
   ) {
-    return FilePicker.platform.saveFile(
+    return FilePicker.saveFile(
       dialogTitle: 'Save parent report data',
       fileName: 'mewtionary_parent_report.csv',
       type: FileType.custom,
