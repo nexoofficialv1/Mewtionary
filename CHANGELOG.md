@@ -1,5 +1,17 @@
 # Changelog
 
+
+## 2.8.1
+
+### Fixed
+- Corrected `num` to `double` assignments in curriculum and pronunciation scoring.
+- Restored access to curriculum level and skill extension getters.
+- Corrected invalid `Colors.black67` usage.
+- Added a valid Flutter widget smoke test so `flutter create` does not generate an obsolete `MyApp` test.
+- Removed unused imports reported by the analyzer.
+- Updated color opacity, speech locale and dropdown APIs for current Flutter stable.
+- Kept analyzer strict for errors while making deprecation notices non-fatal in CI.
+
 ## 2.8.0
 
 ### Removed

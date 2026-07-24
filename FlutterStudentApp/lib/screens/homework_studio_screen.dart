@@ -239,7 +239,7 @@ class _HomeworkStudioScreenState
                 ),
                 const SizedBox(height: 14),
                 DropdownButtonFormField<HomeworkTemplate>(
-                  value: template,
+                  initialValue: template,
                   decoration: const InputDecoration(
                     labelText: 'Homework format',
                     prefixIcon: Icon(Icons.assignment_rounded),

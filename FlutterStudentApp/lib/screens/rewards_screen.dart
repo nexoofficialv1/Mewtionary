@@ -112,7 +112,7 @@ class _RewardsScreenState extends State<RewardsScreen> {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: badge.unlocked
-                          ? MewtionaryTheme.amber.withOpacity(.25)
+                          ? MewtionaryTheme.amber.withValues(alpha: .25)
                           : Colors.grey.shade200,
                       child: Text(
                         badge.unlocked ? badge.definition.icon : '🔒',

@@ -93,7 +93,7 @@ class _StudyPlannerScreenState extends State<StudyPlannerScreen> {
                   ),
                 ),
                 DropdownButtonFormField<String>(
-                  value: route,
+                  initialValue: route,
                   decoration: const InputDecoration(
                     labelText: 'Open module',
                   ),
@@ -312,8 +312,8 @@ class _StudyPlannerScreenState extends State<StudyPlannerScreen> {
                         },
                         secondary: CircleAvatar(
                           backgroundColor: task.completed
-                              ? Colors.green.withOpacity(.15)
-                              : MewtionaryTheme.teal.withOpacity(.12),
+                              ? Colors.green.withValues(alpha: .15)
+                              : MewtionaryTheme.teal.withValues(alpha: .12),
                           child: Icon(
                             task.completed
                                 ? Icons.check_rounded

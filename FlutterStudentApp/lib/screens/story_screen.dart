@@ -137,7 +137,7 @@ class _StoryScreenState extends State<StoryScreen> {
                   Text(
                     page.bangla,
                     style: const TextStyle(
-                      color: Colors.black67,
+                      color: Colors.black54,
                       fontSize: 17,
                       height: 1.45,
                     ),

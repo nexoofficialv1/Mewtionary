@@ -118,7 +118,7 @@ class _ConversationLabScreenState
                       onTap: () => _open(scenario),
                       leading: CircleAvatar(
                         backgroundColor:
-                            MewtionaryTheme.teal.withOpacity(.12),
+                            MewtionaryTheme.teal.withValues(alpha: .12),
                         child: Icon(
                           _locationIcon(scenario.location),
                           color: MewtionaryTheme.teal,
@@ -227,7 +227,9 @@ class _ConversationPlayerScreenState
     setState(() => listening = true);
     await widget.teacher.listen();
     await speech.listen(
-      localeId: 'en_US',
+      listenOptions: const SpeechListenOptions(
+        localeId: 'en_US',
+      ),
       onResult: (result) {
         answerController.text = result.recognizedWords;
         if (result.finalResult) {

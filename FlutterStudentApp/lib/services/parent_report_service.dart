@@ -4,6 +4,7 @@ import 'dart:typed_data';
 import 'package:file_picker/file_picker.dart';
 
 import '../data/mewtionary_database.dart';
+import '../models/curriculum_models.dart';
 import '../models/tutor_studio_models.dart';
 import 'gamification_service.dart';
 import 'learning_analytics_service.dart';

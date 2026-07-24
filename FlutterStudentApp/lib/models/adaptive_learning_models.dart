@@ -1,4 +1,5 @@
 import 'curriculum_models.dart';
+export 'curriculum_models.dart';
 
 class StudentProfile {
   const StudentProfile({

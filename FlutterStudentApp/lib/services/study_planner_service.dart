@@ -2,7 +2,6 @@ import '../app/routes.dart';
 import '../data/mewtionary_database.dart';
 import '../models/curriculum_models.dart';
 import '../models/exam_coach_models.dart';
-import '../models/tutor_studio_models.dart';
 import 'learning_analytics_service.dart';
 
 class StudyPlannerService {

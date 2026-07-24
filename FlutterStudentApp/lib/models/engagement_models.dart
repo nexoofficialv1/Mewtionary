@@ -1,5 +1,3 @@
-import 'curriculum_models.dart';
-
 enum MiniGameType {
   wordMatch,
   spelling,

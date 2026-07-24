@@ -152,7 +152,7 @@ class _CertificateStudioScreenState
                         onTap: () => _preview(status),
                         leading: CircleAvatar(
                           backgroundColor: status.unlocked
-                              ? MewtionaryTheme.amber.withOpacity(.22)
+                              ? MewtionaryTheme.amber.withValues(alpha: .22)
                               : Colors.grey.shade200,
                           child: Text(
                             status.unlocked

@@ -85,7 +85,8 @@ class CurriculumEngine extends ChangeNotifier {
     required double score,
   }) async {
     final old = progressFor(lesson.id);
-    final mastery = max(old.mastery, score.clamp(0, 1));
+    final boundedScore = score.clamp(0.0, 1.0).toDouble();
+    final mastery = max<double>(old.mastery, boundedScore);
     final interval = _reviewDays(
       mastery,
       old.attempts + 1,

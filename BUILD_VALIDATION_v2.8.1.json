@@ -1,0 +1,33 @@
+{
+  "version": "2.8.1+29",
+  "purpose": "GitHub Flutter analyzer and build fix",
+  "checks": {
+    "version_2_8_1": true,
+    "curriculum_double_fix": true,
+    "pronunciation_double_fix": true,
+    "extensions_exported": true,
+    "parent_report_curriculum_import": true,
+    "invalid_color_removed": true,
+    "obsolete_myapp_removed": true,
+    "bridge_still_absent": true,
+    "with_opacity_removed": true,
+    "top_level_locale_removed": true,
+    "workflow_nonfatal_deprecations": true
+  },
+  "reported_errors_addressed": [
+    "curriculum_engine num-to-double errors",
+    "CurriculumLevel.title and banglaTitle extension visibility",
+    "CurriculumSkill.label extension visibility",
+    "story_screen invalid Colors.black67",
+    "pronunciation_scoring_service num-to-double error",
+    "generated widget_test MyApp error"
+  ],
+  "additional_cleanup": [
+    "unused imports",
+    "deprecated Color.withOpacity calls",
+    "deprecated speech locale argument",
+    "deprecated DropdownButtonFormField value argument",
+    "non-fatal analyzer info/warning settings"
+  ],
+  "limitation": "Flutter SDK was unavailable locally; the corrected source must be verified by the next GitHub Actions run."
+}

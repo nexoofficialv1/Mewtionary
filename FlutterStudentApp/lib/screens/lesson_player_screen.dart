@@ -178,7 +178,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
                                     i != correctIndex
                                 ? Colors.red.shade100
                                 : selected == i
-                                    ? MewtionaryTheme.teal.withOpacity(.12)
+                                    ? MewtionaryTheme.teal.withValues(alpha: .12)
                                     : Colors.white,
                         borderRadius: BorderRadius.circular(16),
                         child: InkWell(

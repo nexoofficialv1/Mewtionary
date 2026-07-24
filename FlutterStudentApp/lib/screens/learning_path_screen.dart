@@ -79,7 +79,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
           LearningFeedbackAnchor(teacher: widget.teacher, height: 275),
           const SizedBox(height: 14),
           DropdownButtonFormField<CurriculumLevel>(
-            value: level,
+            initialValue: level,
             decoration: const InputDecoration(
               labelText: 'Learning level',
               prefixIcon: Icon(Icons.school_rounded),
@@ -192,7 +192,7 @@ class _LessonTile extends StatelessWidget {
         backgroundColor: record.completed
             ? Colors.green.shade100
             : unlocked
-                ? MewtionaryTheme.teal.withOpacity(.12)
+                ? MewtionaryTheme.teal.withValues(alpha: .12)
                 : Colors.grey.shade200,
         child: Icon(
           record.completed

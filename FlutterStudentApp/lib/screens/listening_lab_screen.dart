@@ -110,7 +110,9 @@ class _ListeningLabScreenState extends State<ListeningLabScreen> {
     setState(() => listeningNow = true);
     await widget.teacher.listen();
     await speech.listen(
-      localeId: 'en_US',
+      listenOptions: const SpeechListenOptions(
+        localeId: 'en_US',
+      ),
       onResult: (result) {
         transcriptController.text = result.recognizedWords;
         if (result.finalResult) {

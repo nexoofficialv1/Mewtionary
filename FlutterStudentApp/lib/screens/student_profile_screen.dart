@@ -73,7 +73,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
           ),
           const SizedBox(height: 12),
           DropdownButtonFormField<int>(
-            value: age,
+            initialValue: age,
             decoration: const InputDecoration(
               labelText: 'Age',
               prefixIcon: Icon(Icons.cake_rounded),
@@ -91,7 +91,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
           ),
           const SizedBox(height: 12),
           DropdownButtonFormField<CurriculumLevel>(
-            value: level,
+            initialValue: level,
             decoration: const InputDecoration(
               labelText: 'Current learning level',
               prefixIcon: Icon(Icons.school_rounded),

@@ -35,13 +35,15 @@ class PronunciationScoringService {
         target.length > actual.length ? target.length : actual.length;
     final sequence = 1 - (distance / maxLength);
 
-    final total =
-        (coverage * .65 + sequence.clamp(0, 1) * .35).clamp(0, 1);
+    final boundedSequence = sequence.clamp(0.0, 1.0).toDouble();
+    final total = (coverage * .65 + boundedSequence * .35)
+        .clamp(0.0, 1.0)
+        .toDouble();
 
     return PronunciationScore(
       total: total,
-      wordCoverage: coverage.clamp(0, 1),
-      sequenceAccuracy: sequence.clamp(0, 1),
+      wordCoverage: coverage.clamp(0.0, 1.0).toDouble(),
+      sequenceAccuracy: boundedSequence,
       missingWords: missing,
       extraWords: extra,
     );

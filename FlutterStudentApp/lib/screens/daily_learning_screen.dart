@@ -128,7 +128,7 @@ class _DailyLearningScreenState extends State<DailyLearningScreen> {
                       leading: CircleAvatar(
                         backgroundColor: completed.contains(item.id)
                             ? Colors.green.shade100
-                            : MewtionaryTheme.teal.withOpacity(.12),
+                            : MewtionaryTheme.teal.withValues(alpha: .12),
                         child: Icon(
                           completed.contains(item.id)
                               ? Icons.check_rounded
