@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:file_picker/file_picker.dart';
 import 'package:flutter/services.dart';
 
 import '../data/mewtionary_database.dart';
 import '../models/tutor_studio_models.dart';
+import 'app_file_service.dart';
 
 class HomeworkReview {
   const HomeworkReview({
@@ -128,12 +128,9 @@ class HomeworkStudioService {
     final safeName = title
         .replaceAll(RegExp(r'[^A-Za-z0-9_-]+'), '_')
         .replaceAll(RegExp(r'_+'), '_');
-    return FilePicker.saveFile(
-      dialogTitle: 'Save homework',
+    return AppFileService.saveText(
       fileName: '${safeName.isEmpty ? "homework" : safeName}.txt',
-      type: FileType.custom,
-      allowedExtensions: const ['txt'],
-      bytes: Uint8List.fromList(utf8.encode(content)),
+      content: content,
     );
   }
 }

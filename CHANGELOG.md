@@ -1,6 +1,21 @@
 # Changelog
 
 
+## 2.8.6
+
+### Fixed
+- Removed the `file_picker` dependency and its failing Android plugin
+  registration.
+- Migrated dictionary-pack imports to Flutter's official `file_selector`.
+- Added `path_provider` for safe local report, homework and certificate
+  exports.
+- Exports are stored inside a `Mewtionary` folder in Downloads when the
+  platform exposes that directory, with application documents as fallback.
+- Android host files, `.dart_tool` and build output are removed before
+  `flutter create`, preventing stale generated plugin registrants.
+- Updated APK artifact name to v2.8.6.
+
+
 ## 2.8.5
 
 ### Fixed

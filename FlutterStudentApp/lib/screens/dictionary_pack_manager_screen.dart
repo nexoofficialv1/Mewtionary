@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:file_picker/file_picker.dart';
+import 'package:file_selector/file_selector.dart';
 import 'package:flutter/material.dart';
 
 import '../core/mewtionary_theme.dart';
@@ -61,34 +61,34 @@ class _DictionaryPackManagerScreenState
   }
 
   Future<void> _external() async {
-    final manifest = await FilePicker.pickFiles(
-      dialogTitle: 'Select manifest JSON',
-      type: FileType.custom,
-      allowedExtensions: const ['json'],
-      withData: true,
+    const manifestTypes = XTypeGroup(
+      label: 'Mewtionary manifest',
+      extensions: ['json'],
+      mimeTypes: ['application/json'],
+    );
+    const dataTypes = XTypeGroup(
+      label: 'Mewtionary dictionary entries',
+      extensions: ['jsonl', 'txt'],
+      mimeTypes: ['application/json', 'text/plain'],
+    );
+
+    final manifest = await openFile(
+      acceptedTypeGroups: const [manifestTypes],
     );
     if (manifest == null) return;
 
-    final data = await FilePicker.pickFiles(
-      dialogTitle: 'Select entries JSONL',
-      type: FileType.custom,
-      allowedExtensions: const ['jsonl', 'txt'],
-      withData: true,
+    final data = await openFile(
+      acceptedTypeGroups: const [dataTypes],
     );
     if (data == null) return;
-
-    final manifestBytes = manifest.files.single.bytes;
-    final dataBytes = data.files.single.bytes;
-    if (manifestBytes == null || dataBytes == null) {
-      setState(() => status = 'Selected file bytes পাওয়া যায়নি।');
-      return;
-    }
 
     setState(() {
       busy = true;
       status = 'Pack যাচাই ও import হচ্ছে…';
     });
     try {
+      final manifestBytes = await manifest.readAsBytes();
+      final dataBytes = await data.readAsBytes();
       final result = await widget.service.installBytes(
         manifestJson: utf8.decode(manifestBytes),
         jsonlBytes: Uint8List.fromList(dataBytes),

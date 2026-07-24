@@ -1,0 +1,36 @@
+{
+  "version": "2.8.6+34",
+  "purpose": "Remove failing file_picker Android plugin",
+  "checks": {
+    "version_2_8_6": true,
+    "dart_min_3_8": true,
+    "file_picker_dependency_removed": true,
+    "file_picker_imports_removed": true,
+    "file_picker_calls_removed": true,
+    "file_selector_present": true,
+    "path_provider_present": true,
+    "official_open_file_used": true,
+    "download_export_service": true,
+    "documents_fallback": true,
+    "stale_android_removed": true,
+    "artifact_v286": true,
+    "unity_absent": true
+  },
+  "removed": [
+    "file_picker dependency",
+    "FilePickerPlugin Android registration",
+    "FilePicker static API calls"
+  ],
+  "added": [
+    "file_selector 1.1.0",
+    "path_provider 2.1.6",
+    "AppFileService",
+    "clean Android host regeneration"
+  ],
+  "expected_artifact": "Mewtionary-v2.8.6-Flutter-only-debug-apk",
+  "limitations": [
+    "Flutter SDK is unavailable in this execution environment.",
+    "The next GitHub Actions run must verify actual plugin resolution and APK compilation.",
+    "On platforms without a public Downloads directory, exports use the application's documents directory."
+  ]
+}

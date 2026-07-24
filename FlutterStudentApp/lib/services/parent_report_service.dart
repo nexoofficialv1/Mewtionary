@@ -1,11 +1,8 @@
 import 'dart:convert';
-import 'dart:typed_data';
-
-import 'package:file_picker/file_picker.dart';
-
 import '../data/mewtionary_database.dart';
 import '../models/curriculum_models.dart';
 import '../models/tutor_studio_models.dart';
+import 'app_file_service.dart';
 import 'gamification_service.dart';
 import 'learning_analytics_service.dart';
 import 'student_profile_service.dart';
@@ -194,28 +191,18 @@ Study tasks completed: ${report.completedStudyTasks}</div>
   Future<String?> exportHtml(
     ParentReportSnapshot report,
   ) {
-    return FilePicker.saveFile(
-      dialogTitle: 'Save parent report',
+    return AppFileService.saveText(
       fileName: 'mewtionary_parent_report.html',
-      type: FileType.custom,
-      allowedExtensions: const ['html'],
-      bytes: Uint8List.fromList(
-        utf8.encode(buildHtml(report)),
-      ),
+      content: buildHtml(report),
     );
   }
 
   Future<String?> exportCsv(
     ParentReportSnapshot report,
   ) {
-    return FilePicker.saveFile(
-      dialogTitle: 'Save parent report data',
+    return AppFileService.saveText(
       fileName: 'mewtionary_parent_report.csv',
-      type: FileType.custom,
-      allowedExtensions: const ['csv'],
-      bytes: Uint8List.fromList(
-        utf8.encode(buildCsv(report)),
-      ),
+      content: buildCsv(report),
     );
   }
 

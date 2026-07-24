@@ -10,6 +10,7 @@
 | Database write failure | Progress could not be saved. | Retry once and keep the current screen |
 | Empty answer | Enter or select an answer first. | Keep question active |
 | File export cancelled | No file was saved. | Return without data loss |
+| Export directory unavailable | Export could not be written. | Use application documents fallback and report failure safely |
 | Content file missing | Learning content is unavailable. | Show a safe empty-state screen |
 | Time limit reached | Time is over; the exam was submitted. | Show result and review |
 

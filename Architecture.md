@@ -37,7 +37,7 @@ Local data
 - Shared preferences
 - Text-to-speech
 - Speech-to-text
-- File picker and SHA-256 validation
+- Official file selector, path provider and SHA-256 validation
 
 There is no game engine, 3D renderer, Unity bridge, remote backend or
 mandatory internet connection.

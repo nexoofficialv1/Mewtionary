@@ -1,11 +1,8 @@
 import 'dart:convert';
-import 'dart:typed_data';
-
-import 'package:file_picker/file_picker.dart';
-
 import '../data/mewtionary_database.dart';
 import '../models/curriculum_models.dart';
 import '../models/exam_coach_models.dart';
+import 'app_file_service.dart';
 import 'exam_coach_content_service.dart';
 import 'gamification_service.dart';
 import 'student_profile_service.dart';
@@ -73,12 +70,9 @@ class CertificateService {
       RegExp(r'[^a-zA-Z0-9_-]'),
       '_',
     );
-    return FilePicker.saveFile(
-      dialogTitle: 'Save certificate',
+    return AppFileService.saveText(
       fileName: 'Mewtionary_$safe.html',
-      type: FileType.custom,
-      allowedExtensions: const ['html'],
-      bytes: Uint8List.fromList(utf8.encode(html)),
+      content: html,
     );
   }
 
