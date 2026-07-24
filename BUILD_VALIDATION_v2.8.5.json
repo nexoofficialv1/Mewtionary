@@ -1,0 +1,27 @@
+{
+  "version": "2.8.5+33",
+  "purpose": "Fix setup-java Gradle cache failure before flutter create",
+  "checks": {
+    "version_2_8_5": true,
+    "setup_java_v5": true,
+    "java_17": true,
+    "temurin": true,
+    "gradle_cache_removed_from_java": true,
+    "flutter_cache_retained": true,
+    "android_sdk_36": true,
+    "artifact_v285": true,
+    "flutter_create_after_java": true,
+    "workflow_has_steps": true,
+    "unity_absent": true
+  },
+  "cause": "actions/setup-java cache=gradle attempted to hash Gradle dependency files before Flutter generated the Android project",
+  "fix": [
+    "actions/setup-java@v5",
+    "Java 17 Temurin",
+    "removed cache: gradle",
+    "kept Flutter cache",
+    "kept Android SDK 36 setup"
+  ],
+  "expected_artifact": "Mewtionary-v2.8.5-Flutter-only-debug-apk",
+  "limitation": "The next GitHub Actions run must confirm package resolution, analysis, tests, Gradle compilation and APK generation."
+}

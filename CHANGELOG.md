@@ -1,6 +1,21 @@
 # Changelog
 
 
+## 2.8.5
+
+### Fixed
+- Removed premature Gradle dependency caching from the Java setup step.
+- Updated `actions/setup-java` from v4 to v5 (Node 24 runtime).
+- Prevented setup failure before Flutter generates the Android Gradle project.
+- Updated the debug APK artifact name to v2.8.5.
+
+### Root cause
+- `cache: gradle` was executed before `flutter create`.
+- At that point the repository contained no `build.gradle`,
+  `gradle-wrapper.properties`, or version-catalog files.
+- `setup-java` therefore failed while calculating the Gradle cache key.
+
+
 ## 2.8.4
 
 ### Fixed
