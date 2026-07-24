@@ -1,0 +1,23 @@
+{
+  "version": "2.8.4+32",
+  "purpose": "GitHub Actions YAML syntax and indentation correction",
+  "checks": {
+    "version_2_8_4": true,
+    "workflow_has_jobs": true,
+    "workflow_has_build_steps": true,
+    "sdk_step_indented": true,
+    "sdk_command_present": true,
+    "java_17_present": true,
+    "flutter_stable_present": true,
+    "exact_flutter_patch_removed": true,
+    "artifact_v284": true,
+    "apk_verification": true,
+    "no_top_level_step": true
+  },
+  "yaml_parser": "passed",
+  "cause": "Android SDK installation step was outside jobs.build.steps",
+  "expected_workflow": "Build Mewtionary Flutter-Only APK",
+  "expected_artifact": "Mewtionary-v2.8.4-Flutter-only-debug-apk",
+  "note": "This patch fixes workflow parsing. The next GitHub run will continue to dependency resolution, analysis, tests and Gradle compilation.",
+  "android_setup_action": "android-actions/setup-android@v4"
+}

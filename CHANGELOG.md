@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 2.8.4
+
+### Fixed
+- Corrected GitHub Actions YAML indentation.
+- Moved Android SDK 36 installation inside the build job steps.
+- Added Java 17 setup and Android Actions SDK setup.
+- Added workflow timeout, version diagnostics and APK existence validation.
+- Removed the exact Flutter patch pin and used the current stable channel.
+- Updated the APK artifact name to v2.8.4.
+
+
 ## 2.8.3
 
 ### Fixed
