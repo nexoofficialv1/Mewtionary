@@ -53,7 +53,7 @@ import '../screens/student_home_screen.dart';
 import '../screens/tense_screen.dart';
 import '../screens/voice_practice_screen.dart';
 import '../services/progress_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import 'routes.dart';
 
 class MewtionaryApp extends StatefulWidget {
@@ -64,7 +64,7 @@ class MewtionaryApp extends StatefulWidget {
 }
 
 class _MewtionaryAppState extends State<MewtionaryApp> {
-  final teacher = TeacherOrchestrator();
+  final teacher = LearningFeedbackService();
   final progress = ProgressService();
   final repository = ContentRepository();
   final curriculumRepository = CurriculumRepository();

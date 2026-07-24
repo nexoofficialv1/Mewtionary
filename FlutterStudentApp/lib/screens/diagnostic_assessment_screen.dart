@@ -4,8 +4,8 @@ import '../core/mewtionary_theme.dart';
 import '../models/adaptive_learning_models.dart';
 import '../services/diagnostic_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class DiagnosticAssessmentScreen extends StatefulWidget {
   const DiagnosticAssessmentScreen({
@@ -17,7 +17,7 @@ class DiagnosticAssessmentScreen extends StatefulWidget {
 
   final DiagnosticService service;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<DiagnosticAssessmentScreen> createState() =>
@@ -99,7 +99,7 @@ class _DiagnosticAssessmentScreenState
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(teacher: widget.teacher, height: 255),
+                LearningFeedbackAnchor(teacher: widget.teacher, height: 255),
                 const SizedBox(height: 14),
                 if (result == null) ...[
                   LinearProgressIndicator(

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../models/curriculum_models.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class StudentProfileScreen extends StatefulWidget {
   const StudentProfileScreen({
@@ -13,7 +13,7 @@ class StudentProfileScreen extends StatefulWidget {
   });
 
   final StudentProfileService service;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<StudentProfileScreen> createState() =>
@@ -62,7 +62,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher, height: 260),
+          LearningFeedbackAnchor(teacher: widget.teacher, height: 260),
           const SizedBox(height: 14),
           TextField(
             controller: nameController,

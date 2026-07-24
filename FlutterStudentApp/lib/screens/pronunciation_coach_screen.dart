@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 import '../core/mewtionary_theme.dart';
@@ -8,8 +7,8 @@ import '../services/exam_coach_content_service.dart';
 import '../services/gamification_service.dart';
 import '../services/pronunciation_coach_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class PronunciationCoachScreen extends StatefulWidget {
   const PronunciationCoachScreen({
@@ -25,7 +24,7 @@ class PronunciationCoachScreen extends StatefulWidget {
   final PronunciationCoachService coach;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<PronunciationCoachScreen> createState() =>
@@ -70,7 +69,7 @@ class _PronunciationCoachScreenState
   Future<void> _teacherModel() async {
     if (exercises.isEmpty) return;
     await widget.teacher.act(
-      state: Teacher3DState.speaking,
+      state: LearningFeedbackState.speaking,
       message: 'Repeat after me: ${exercise.target}',
     );
   }
@@ -179,7 +178,7 @@ class _PronunciationCoachScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 255,
           ),
@@ -232,7 +231,7 @@ class _PronunciationCoachScreenState
                   OutlinedButton.icon(
                     onPressed: _teacherModel,
                     icon: const Icon(Icons.volume_up_rounded),
-                    label: const Text('Teacher Model'),
+                    label: const Text('Hear Model'),
                   ),
                 ],
               ),

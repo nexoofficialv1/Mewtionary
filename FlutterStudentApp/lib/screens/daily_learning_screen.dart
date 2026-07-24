@@ -4,8 +4,8 @@ import '../core/mewtionary_theme.dart';
 import '../models/adaptive_learning_models.dart';
 import '../services/daily_plan_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class DailyLearningScreen extends StatefulWidget {
   const DailyLearningScreen({
@@ -17,7 +17,7 @@ class DailyLearningScreen extends StatefulWidget {
 
   final DailyPlanService service;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<DailyLearningScreen> createState() =>
@@ -96,7 +96,7 @@ class _DailyLearningScreenState extends State<DailyLearningScreen> {
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(teacher: widget.teacher, height: 265),
+                LearningFeedbackAnchor(teacher: widget.teacher, height: 265),
                 const SizedBox(height: 14),
                 Card(
                   color: const Color(0xFFFFF1C7),

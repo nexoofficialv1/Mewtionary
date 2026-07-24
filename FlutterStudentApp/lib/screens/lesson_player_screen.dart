@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../curriculum/curriculum_engine.dart';
 import '../models/curriculum_models.dart';
-import '../services/adaptive_teacher_dialogue.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/adaptive_learning_dialogue.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class LessonPlayerScreen extends StatefulWidget {
   const LessonPlayerScreen({
@@ -17,7 +16,7 @@ class LessonPlayerScreen extends StatefulWidget {
   });
 
   final CurriculumLesson lesson;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final CurriculumEngine engine;
 
   @override
@@ -45,10 +44,10 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
       state: _teacherState(widget.lesson.teacherState),
       message: widget.lesson.explanation,
       prop: widget.lesson.skill == CurriculumSkill.story
-          ? Teacher3DProp.book
+          ? LearningFeedbackContext.book
           : widget.lesson.skill == CurriculumSkill.grammar
-              ? Teacher3DProp.pointer
-              : Teacher3DProp.none,
+              ? LearningFeedbackContext.pointer
+              : LearningFeedbackContext.none,
     );
   }
 
@@ -62,7 +61,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
       answered = true;
     });
 
-    await AdaptiveTeacherDialogue(widget.teacher).react(
+    await AdaptiveLearningDialogue(widget.teacher).react(
       score: score,
       attempts: widget.engine.progressFor(widget.lesson.id).attempts,
       hint: activity['hint'] as String?,
@@ -100,10 +99,10 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
     );
   }
 
-  Teacher3DState _teacherState(String value) {
-    return Teacher3DState.values.firstWhere(
+  LearningFeedbackState _teacherState(String value) {
+    return LearningFeedbackState.values.firstWhere(
       (item) => item.name.toLowerCase() == value.toLowerCase(),
-      orElse: () => Teacher3DState.speaking,
+      orElse: () => LearningFeedbackState.speaking,
     );
   }
 
@@ -118,7 +117,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher, height: 275),
+          LearningFeedbackAnchor(teacher: widget.teacher, height: 275),
           const SizedBox(height: 14),
           Card(
             child: Padding(
@@ -146,7 +145,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
                   FilledButton.icon(
                     onPressed: _explain,
                     icon: const Icon(Icons.school_rounded),
-                    label: const Text('Teacher আবার বুঝিয়ে দাও'),
+                    label: const Text('আবার বুঝিয়ে দাও'),
                   ),
                 ],
               ),

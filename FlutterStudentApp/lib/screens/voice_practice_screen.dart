@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../services/progress_service.dart';
 import '../services/pronunciation_scoring_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class VoicePracticeScreen extends StatefulWidget {
   const VoicePracticeScreen({
@@ -15,7 +14,7 @@ class VoicePracticeScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final ProgressService progress;
 
   @override
@@ -120,7 +119,7 @@ class _VoicePracticeScreenState extends State<VoicePracticeScreen> {
       score = 0;
     });
     widget.teacher.act(
-      state: Teacher3DState.speaking,
+      state: LearningFeedbackState.speaking,
       message: 'Repeat after me: $target',
     );
   }
@@ -138,7 +137,7 @@ class _VoicePracticeScreenState extends State<VoicePracticeScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 300,
           ),
@@ -169,7 +168,7 @@ class _VoicePracticeScreenState extends State<VoicePracticeScreen> {
                   const SizedBox(height: 16),
                   OutlinedButton.icon(
                     onPressed: () => widget.teacher.act(
-                      state: Teacher3DState.speaking,
+                      state: LearningFeedbackState.speaking,
                       message: 'Repeat after me: $target',
                     ),
                     icon: const Icon(Icons.volume_up_rounded),

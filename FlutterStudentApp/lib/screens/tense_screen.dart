@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../data/content_repository.dart';
 import '../models/learning_models.dart';
 import '../services/progress_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class TenseScreen extends StatefulWidget {
   const TenseScreen({
@@ -16,7 +15,7 @@ class TenseScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final ProgressService progress;
   final ContentRepository repository;
 
@@ -49,9 +48,9 @@ class _TenseScreenState extends State<TenseScreen> {
   Future<void> _teachRule() async {
     if (lessons.isEmpty) return;
     await widget.teacher.act(
-      state: Teacher3DState.writingBoard,
+      state: LearningFeedbackState.writingBoard,
       message: '${lesson.title}. ${lesson.rule}',
-      prop: Teacher3DProp.chalk,
+      prop: LearningFeedbackContext.chalk,
     );
   }
 
@@ -76,7 +75,7 @@ class _TenseScreenState extends State<TenseScreen> {
     if (lastQuestion) {
       await widget.progress.completeGrammar();
       await widget.teacher.act(
-        state: Teacher3DState.dancing,
+        state: LearningFeedbackState.dancing,
         message: 'অসাধারণ! এই grammar lesson complete হয়েছে।',
         duration: 2.8,
       );
@@ -95,7 +94,7 @@ class _TenseScreenState extends State<TenseScreen> {
       answered = false;
     });
     await widget.teacher.act(
-      state: Teacher3DState.thinking,
+      state: LearningFeedbackState.thinking,
       message: lesson.quiz[quizIndex].question,
       speak: true,
     );
@@ -116,7 +115,7 @@ class _TenseScreenState extends State<TenseScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 285,
           ),
@@ -171,7 +170,7 @@ class _TenseScreenState extends State<TenseScreen> {
                   FilledButton.icon(
                     onPressed: _teachRule,
                     icon: const Icon(Icons.cast_for_education_rounded),
-                    label: const Text('Teacher আবার বুঝিয়ে দাও'),
+                    label: const Text('আবার বুঝিয়ে দাও'),
                   ),
                 ],
               ),

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../core/mewtionary_theme.dart';
 import '../services/dictionary_pack_service.dart';
 import '../services/progress_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class OfflineDictionaryScreen extends StatefulWidget {
   const OfflineDictionaryScreen({
@@ -14,7 +14,7 @@ class OfflineDictionaryScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final ProgressService progress;
   final DictionaryPackService service;
 
@@ -93,7 +93,7 @@ class _OfflineDictionaryScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher, height: 280),
+          LearningFeedbackAnchor(teacher: widget.teacher, height: 280),
           const SizedBox(height: 14),
           TextField(
             controller: controller,
@@ -157,7 +157,7 @@ class _OfflineDictionaryScreenState
                     FilledButton.icon(
                       onPressed: () => _explain(selected!),
                       icon: const Icon(Icons.school_rounded),
-                      label: const Text('Teacher বুঝিয়ে দাও'),
+                      label: const Text('Audio explanation'),
                     ),
                   ],
                 ),

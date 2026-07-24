@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 import '../core/mewtionary_theme.dart';
@@ -7,9 +6,9 @@ import '../models/tutor_studio_models.dart';
 import '../services/conversation_tutor_service.dart';
 import '../services/gamification_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import '../services/tutor_studio_content_service.dart';
-import '../widgets/teacher_viewport.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class ConversationLabScreen extends StatefulWidget {
   const ConversationLabScreen({
@@ -25,7 +24,7 @@ class ConversationLabScreen extends StatefulWidget {
   final ConversationTutorService tutor;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<ConversationLabScreen> createState() =>
@@ -89,7 +88,7 @@ class _ConversationLabScreenState
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(
+                LearningFeedbackAnchor(
                   teacher: widget.teacher,
                   height: 260,
                 ),
@@ -176,7 +175,7 @@ class ConversationPlayerScreen extends StatefulWidget {
   final ConversationScenario scenario;
   final ConversationTutorService tutor;
   final GamificationService gamification;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<ConversationPlayerScreen> createState() =>
@@ -205,9 +204,9 @@ class _ConversationPlayerScreenState
 
   Future<void> _speakPrompt() {
     return widget.teacher.act(
-      state: Teacher3DState.speaking,
+      state: LearningFeedbackState.speaking,
       message: node.prompt,
-      prop: Teacher3DProp.none,
+      prop: LearningFeedbackContext.none,
     );
   }
 
@@ -336,7 +335,7 @@ class _ConversationPlayerScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 250,
           ),
@@ -422,7 +421,7 @@ class _ConversationPlayerScreenState
                     ExpansionTile(
                       tilePadding: EdgeInsets.zero,
                       title: const Text(
-                        'Teacher Hint',
+                        'Hint',
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                         ),

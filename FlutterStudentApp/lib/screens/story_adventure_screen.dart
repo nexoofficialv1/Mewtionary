@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../models/engagement_models.dart';
@@ -7,8 +6,8 @@ import '../services/engagement_content_service.dart';
 import '../services/gamification_service.dart';
 import '../services/story_adventure_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class StoryAdventureScreen extends StatefulWidget {
   const StoryAdventureScreen({
@@ -24,7 +23,7 @@ class StoryAdventureScreen extends StatefulWidget {
   final StoryAdventureService adventures;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<StoryAdventureScreen> createState() =>
@@ -79,7 +78,7 @@ class _StoryAdventureScreenState
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(
+                LearningFeedbackAnchor(
                   teacher: widget.teacher,
                   height: 260,
                 ),
@@ -147,7 +146,7 @@ class StoryAdventurePlayerScreen extends StatefulWidget {
   final StoryAdventure story;
   final StoryAdventureService service;
   final GamificationService gamification;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<StoryAdventurePlayerScreen> createState() =>
@@ -192,9 +191,9 @@ class _StoryAdventurePlayerScreenState
     } else {
       setState(() => quizMode = true);
       await widget.teacher.act(
-        state: Teacher3DState.pointing,
+        state: LearningFeedbackState.pointing,
         message: 'এখন গল্পটি বুঝেছ কি না দেখি।',
-        prop: Teacher3DProp.pointer,
+        prop: LearningFeedbackContext.pointer,
       );
     }
   }
@@ -256,7 +255,7 @@ class _StoryAdventurePlayerScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 260,
           ),

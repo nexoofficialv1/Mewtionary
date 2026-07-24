@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../models/curriculum_models.dart';
@@ -8,9 +7,9 @@ import '../services/gamification_service.dart';
 import '../services/learning_analytics_service.dart';
 import '../services/smart_revision_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import '../services/tutor_studio_content_service.dart';
-import '../widgets/teacher_viewport.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class SmartRevisionScreen extends StatefulWidget {
   const SmartRevisionScreen({
@@ -28,7 +27,7 @@ class SmartRevisionScreen extends StatefulWidget {
   final LearningAnalyticsService analytics;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<SmartRevisionScreen> createState() =>
@@ -72,10 +71,10 @@ class _SmartRevisionScreenState
       loading = false;
     });
     await widget.teacher.act(
-      state: Teacher3DState.pointing,
+      state: LearningFeedbackState.pointing,
       message:
           '${widget.profile.profile.name}, দুর্বল skill আগে রেখে আজকের revision তৈরি হয়েছে।',
-      prop: Teacher3DProp.pointer,
+      prop: LearningFeedbackContext.pointer,
     );
   }
 
@@ -160,7 +159,7 @@ class _SmartRevisionScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 245,
           ),

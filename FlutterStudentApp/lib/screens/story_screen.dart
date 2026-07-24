@@ -4,8 +4,8 @@ import '../core/mewtionary_theme.dart';
 import '../data/content_repository.dart';
 import '../models/learning_models.dart';
 import '../services/progress_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class StoryScreen extends StatefulWidget {
   const StoryScreen({
@@ -15,7 +15,7 @@ class StoryScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final ProgressService progress;
   final ContentRepository repository;
 
@@ -79,7 +79,7 @@ class _StoryScreenState extends State<StoryScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(
+          LearningFeedbackAnchor(
             teacher: widget.teacher,
             height: 300,
           ),

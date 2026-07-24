@@ -4,9 +4,9 @@ import '../core/mewtionary_theme.dart';
 import '../curriculum/curriculum_engine.dart';
 import '../curriculum/curriculum_repository.dart';
 import '../models/curriculum_models.dart';
-import '../services/adaptive_teacher_dialogue.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/adaptive_learning_dialogue.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 import 'lesson_player_screen.dart';
 
 class LearningPathScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ class LearningPathScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final CurriculumEngine engine;
   final CurriculumRepository repository;
 
@@ -50,7 +50,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
   Future<void> _open(CurriculumLesson lesson) async {
     if (!widget.engine.isUnlocked(lesson)) return;
     await widget.engine.markOpened(lesson);
-    await AdaptiveTeacherDialogue(widget.teacher).introduce(lesson);
+    await AdaptiveLearningDialogue(widget.teacher).introduce(lesson);
     if (!mounted) return;
 
     await Navigator.push(
@@ -76,7 +76,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher, height: 275),
+          LearningFeedbackAnchor(teacher: widget.teacher, height: 275),
           const SizedBox(height: 14),
           DropdownButtonFormField<CurriculumLevel>(
             value: level,

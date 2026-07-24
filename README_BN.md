@@ -1,10 +1,16 @@
-# Mewtionary v2.7 — Pronunciation, Mock Exam, Planner ও Certificate
+# Mewtionary v2.8 — Unity ছাড়া Flutter-only সংস্করণ
 
-এই version-এ চারটি বড় module যুক্ত হয়েছে:
+এই সংস্করণে animated/3D Guide সম্পূর্ণ সরিয়ে দেওয়া হয়েছে।
 
-1. **Pronunciation Coach** — Teacher model voice, syllable chunk, sound focus, mouth tip, minimal pair, speech transcript ও score।
-2. **Mock Exam Centre** — class-wise timed MCQ, fill blank, rearrange ও short-answer test।
-3. **Weekly Study Planner** — weak skill অনুযায়ী automatic সাত দিনের plan, custom task ও completion tracking।
-4. **Certificate Studio** — XP, pronunciation, exam ও study task milestone অনুযায়ী printable certificate।
+- Unity Editor লাগবে না
+- Unity Cloud লাগবে না
+- Unity licence লাগবে না
+- `unityLibrary` export লাগবে না
+- GitHub Actions থেকেই সরাসরি APK build হবে
 
-Pronunciation score raw audio phoneme analysis নয়; recognised transcript-এর word coverage এবং sequence-এর ভিত্তিতে তৈরি হয়।
+Dictionary, Class-wise Learning, Pronunciation, Listening, Conversation,
+Homework, Revision, Mock Exam, Study Planner, Parent Report, Rewards এবং
+Certificate module রাখা হয়েছে।
+
+শেখার প্রয়োজনীয় জায়গায় button চাপলে text-to-speech audio explanation চলবে।
+Home screen-এ কোনো Guide বা automatic greeting থাকবে না।

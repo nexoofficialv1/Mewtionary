@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 import '../core/mewtionary_theme.dart';
@@ -8,8 +7,8 @@ import '../services/engagement_content_service.dart';
 import '../services/gamification_service.dart';
 import '../services/listening_lab_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class ListeningLabScreen extends StatefulWidget {
   const ListeningLabScreen({
@@ -25,7 +24,7 @@ class ListeningLabScreen extends StatefulWidget {
   final ListeningLabService listening;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<ListeningLabScreen> createState() =>
@@ -68,9 +67,9 @@ class _ListeningLabScreenState extends State<ListeningLabScreen> {
   Future<void> _play() async {
     if (exercises.isEmpty) return;
     await widget.teacher.act(
-      state: Teacher3DState.reading,
+      state: LearningFeedbackState.reading,
       message: exercise.english,
-      prop: Teacher3DProp.book,
+      prop: LearningFeedbackContext.book,
     );
   }
 
@@ -206,7 +205,7 @@ class _ListeningLabScreenState extends State<ListeningLabScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher, height: 255),
+          LearningFeedbackAnchor(teacher: widget.teacher, height: 255),
           const SizedBox(height: 14),
           Card(
             color: const Color(0xFFFFF1C7),

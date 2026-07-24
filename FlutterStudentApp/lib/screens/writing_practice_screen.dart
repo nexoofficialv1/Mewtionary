@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../models/adaptive_learning_models.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import '../services/writing_practice_service.dart';
-import '../widgets/teacher_viewport.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class WritingPracticeScreen extends StatefulWidget {
   const WritingPracticeScreen({
@@ -18,7 +17,7 @@ class WritingPracticeScreen extends StatefulWidget {
 
   final WritingPracticeService service;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<WritingPracticeScreen> createState() =>
@@ -57,9 +56,9 @@ class _WritingPracticeScreenState
   Future<void> _speakPrompt() async {
     if (prompts.isEmpty) return;
     await widget.teacher.act(
-      state: Teacher3DState.writingBoard,
+      state: LearningFeedbackState.writingBoard,
       message: prompt.instruction,
-      prop: Teacher3DProp.chalk,
+      prop: LearningFeedbackContext.chalk,
     );
   }
 
@@ -120,7 +119,7 @@ class _WritingPracticeScreenState
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(teacher: widget.teacher, height: 245),
+                LearningFeedbackAnchor(teacher: widget.teacher, height: 245),
                 const SizedBox(height: 12),
                 Card(
                   color: const Color(0xFFFFF1C7),

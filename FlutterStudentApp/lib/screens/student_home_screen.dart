@@ -4,9 +4,9 @@ import '../app/routes.dart';
 import '../core/mewtionary_theme.dart';
 import '../models/learning_models.dart';
 import '../services/progress_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import '../widgets/common_widgets.dart';
-import '../widgets/teacher_viewport.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class StudentHomeScreen extends StatefulWidget {
   const StudentHomeScreen({
@@ -15,7 +15,7 @@ class StudentHomeScreen extends StatefulWidget {
     super.key,
   });
 
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
   final ProgressService progress;
 
   @override
@@ -25,13 +25,6 @@ class StudentHomeScreen extends StatefulWidget {
 class _StudentHomeScreenState extends State<StudentHomeScreen> {
   LearningMode mode = LearningMode.class4To6;
 
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      widget.teacher.welcome();
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +38,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
               style: TextStyle(fontWeight: FontWeight.w900),
             ),
             Text(
-              'Learn English with your 3D Teacher',
+              'Learn English step by step',
               style: TextStyle(fontSize: 11),
             ),
           ],
@@ -63,11 +56,11 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          TeacherViewport(teacher: widget.teacher),
+          LearningFeedbackAnchor(teacher: widget.teacher),
           const SizedBox(height: 20),
           const SectionTitle(
             'তোমার Learning Level',
-            subtitle: 'Level অনুযায়ী lesson ও Teacher-এর ভাষা বদলাবে',
+            subtitle: 'Level অনুযায়ী lesson ও explanation বদলাবে',
           ),
           SizedBox(
             height: 54,
@@ -108,7 +101,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
           ),
           ModuleCard(
             title: 'English–Bangla Dictionary',
-            subtitle: 'Meaning, pronunciation, example ও Teacher explanation',
+            subtitle: 'Meaning, pronunciation, example ও audio explanation',
             icon: Icons.menu_book_rounded,
             color: MewtionaryTheme.teal,
             onTap: () => Navigator.pushNamed(
@@ -128,7 +121,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
           ),
           ModuleCard(
             title: 'Animated Story',
-            subtitle: 'Teacher বই পড়ে শোনাবে এবং প্রশ্ন করবে',
+            subtitle: 'Story audio শোনাবে এবং প্রশ্ন করবে',
             icon: Icons.theater_comedy_rounded,
             color: MewtionaryTheme.coral,
             onTap: () => Navigator.pushNamed(

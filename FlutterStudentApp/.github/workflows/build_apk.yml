@@ -1,4 +1,4 @@
-name: Build Mewtionary Android APK
+name: Build Mewtionary Flutter-Only APK
 
 on:
   workflow_dispatch:
@@ -17,36 +17,35 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Validate curriculum and packs
-        run: python3 ContentTools/validate_content.py
+      - name: Validate curriculum and content packs
+        run: python3 ../ContentTools/validate_content.py
 
       - name: Generate Android host project
         working-directory: FlutterStudentApp
-        run: |
-          flutter create --platforms=android --project-name mewtionary_student .
+        run: flutter create --platforms=android --project-name mewtionary_student .
 
-      - name: Prepare microphone permissions
+      - name: Prepare Android permissions
         working-directory: FlutterStudentApp
         run: python3 tool/prepare_android.py
 
-      - name: Get packages
+      - name: Resolve packages
         working-directory: FlutterStudentApp
         run: flutter pub get
 
-      - name: Analyse
+      - name: Static analysis
         working-directory: FlutterStudentApp
         run: flutter analyze
 
-      - name: Test
+      - name: Run tests
         working-directory: FlutterStudentApp
         run: flutter test
 
-      - name: Build fallback APK
+      - name: Build debug APK
         working-directory: FlutterStudentApp
         run: flutter build apk --debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Mewtionary-v2.2-debug-apk
+          name: Mewtionary-v2.8-Flutter-only-debug-apk
           path: FlutterStudentApp/build/app/outputs/flutter-apk/app-debug.apk

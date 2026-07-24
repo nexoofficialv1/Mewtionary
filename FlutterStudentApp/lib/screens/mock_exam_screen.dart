@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../models/curriculum_models.dart';
@@ -10,8 +9,8 @@ import '../services/exam_coach_content_service.dart';
 import '../services/gamification_service.dart';
 import '../services/mock_exam_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
-import '../widgets/teacher_viewport.dart';
+import '../services/learning_feedback_service.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class MockExamScreen extends StatefulWidget {
   const MockExamScreen({
@@ -27,7 +26,7 @@ class MockExamScreen extends StatefulWidget {
   final MockExamService exam;
   final GamificationService gamification;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<MockExamScreen> createState() => _MockExamScreenState();
@@ -81,7 +80,7 @@ class _MockExamScreenState extends State<MockExamScreen> {
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(
+                LearningFeedbackAnchor(
                   teacher: widget.teacher,
                   height: 255,
                 ),
@@ -165,7 +164,7 @@ class MockExamPlayerScreen extends StatefulWidget {
   final MockExamPaper paper;
   final MockExamService service;
   final GamificationService gamification;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<MockExamPlayerScreen> createState() =>
@@ -210,9 +209,9 @@ class _MockExamPlayerScreenState
       }
     });
     await widget.teacher.act(
-      state: Teacher3DState.pointing,
+      state: LearningFeedbackState.pointing,
       message: 'Exam started. Read carefully and manage your time.',
-      prop: Teacher3DProp.pointer,
+      prop: LearningFeedbackContext.pointer,
     );
   }
 
@@ -339,7 +338,7 @@ class _MockExamPlayerScreenState
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        TeacherViewport(
+        LearningFeedbackAnchor(
           teacher: widget.teacher,
           height: 255,
         ),
@@ -509,7 +508,7 @@ class _MockExamPlayerScreenState
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        TeacherViewport(
+        LearningFeedbackAnchor(
           teacher: widget.teacher,
           height: 245,
         ),

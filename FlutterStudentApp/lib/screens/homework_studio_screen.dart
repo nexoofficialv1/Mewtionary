@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mewtionary_teacher3d_bridge/mewtionary_teacher3d_bridge.dart';
 
 import '../core/mewtionary_theme.dart';
 import '../models/tutor_studio_models.dart';
 import '../services/homework_studio_service.dart';
 import '../services/student_profile_service.dart';
-import '../services/teacher_orchestrator.dart';
+import '../services/learning_feedback_service.dart';
 import '../services/tutor_studio_content_service.dart';
-import '../widgets/teacher_viewport.dart';
+import '../widgets/learning_feedback_anchor.dart';
 
 class HomeworkStudioScreen extends StatefulWidget {
   const HomeworkStudioScreen({
@@ -21,7 +20,7 @@ class HomeworkStudioScreen extends StatefulWidget {
   final TutorStudioContentService content;
   final HomeworkStudioService studio;
   final StudentProfileService profile;
-  final TeacherOrchestrator teacher;
+  final LearningFeedbackService teacher;
 
   @override
   State<HomeworkStudioScreen> createState() =>
@@ -72,9 +71,9 @@ class _HomeworkStudioScreenState
       draftId = null;
     });
     widget.teacher.act(
-      state: Teacher3DState.writingBoard,
+      state: LearningFeedbackState.writingBoard,
       message: template.instructions,
-      prop: Teacher3DProp.chalk,
+      prop: LearningFeedbackContext.chalk,
     );
   }
 
@@ -234,7 +233,7 @@ class _HomeworkStudioScreenState
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                TeacherViewport(
+                LearningFeedbackAnchor(
                   teacher: widget.teacher,
                   height: 245,
                 ),
@@ -329,7 +328,7 @@ class _HomeworkStudioScreenState
                               CrossAxisAlignment.stretch,
                           children: [
                             Text(
-                              'Teacher Review: ${review!.score}%',
+                              'Writing Review: ${review!.score}%',
                               style: const TextStyle(
                                 fontWeight: FontWeight.w900,
                               ),
